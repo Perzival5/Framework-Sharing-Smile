@@ -1,0 +1,36 @@
+2025-10-21 18:14:09,024 INFO: HTTP method: POST
+2025-10-21 18:14:09,024 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 18:14:09,026 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 18:14:09,026 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 18:14:09,026 DEBUG: Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'admin'}
+2025-10-21 18:14:09,027 INFO: Timestamp: 2025-10-21 18:14:09
+2025-10-21 18:14:09,028 INFO: Status code: 200
+2025-10-21 18:14:09,029 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '65d7031e605ebe60ff6bfb34b9a3eb47;o=1', 'date': 'Tue, 21 Oct 2025 22:14:10 GMT', 'server': 'Google Frontend', 'Content-Length': '233', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 18:14:09,030 DEBUG: Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjg5NjUwLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.ezOrCauk5He4BQ-2iL0CFkNJKBk2hwNF4zHRtYCbIAk', 'token_type': 'Bearer'}
+2025-10-21 18:14:09,875 INFO: HTTP method: POST
+2025-10-21 18:14:09,875 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 18:14:09,877 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 18:14:09,877 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 18:14:09,877 DEBUG: Request payload: {'username': 'profesional@project-x.com', 'password': 'profesional'}
+2025-10-21 18:14:09,878 INFO: Timestamp: 2025-10-21 18:14:09
+2025-10-21 18:14:09,879 INFO: Status code: 200
+2025-10-21 18:14:09,880 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '6bbdece8b62255d5f9a2714ec2ea0f3d', 'date': 'Tue, 21 Oct 2025 22:14:11 GMT', 'server': 'Google Frontend', 'Content-Length': '237', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 18:14:09,880 DEBUG: Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYxNjg5NjUxLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.ZC96u4FKfCKIs6Vxn_QkoPB6Wv4-vTKvm2F-CDAH-H0', 'token_type': 'Bearer'}
+2025-10-21 18:14:58,564 INFO: HTTP method: POST
+2025-10-21 18:14:58,565 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 18:14:58,565 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 18:14:58,566 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 18:14:58,566 DEBUG: Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'admin'}
+2025-10-21 18:14:58,571 INFO: Timestamp: 2025-10-21 18:14:58
+2025-10-21 18:14:58,571 INFO: Status code: 200
+2025-10-21 18:14:58,572 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'cf4adddc59065ccba3c78c503f6d332f;o=1', 'date': 'Tue, 21 Oct 2025 22:14:59 GMT', 'server': 'Google Frontend', 'Content-Length': '233', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 18:14:58,572 DEBUG: Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjg5Njk5LCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.RpfWCuSwZn4Cbot_WGC9rkadaBHk6HofbbkTWr71PL8', 'token_type': 'Bearer'}
+2025-10-21 18:14:59,367 INFO: HTTP method: POST
+2025-10-21 18:14:59,368 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 18:14:59,368 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 18:14:59,369 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 18:14:59,369 DEBUG: Request payload: {'username': 'profesional@project-x.com', 'password': 'profesional'}
+2025-10-21 18:14:59,370 INFO: Timestamp: 2025-10-21 18:14:59
+2025-10-21 18:14:59,371 INFO: Status code: 200
+2025-10-21 18:14:59,371 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'b003f6226fd18ba597139994c8f8b456', 'date': 'Tue, 21 Oct 2025 22:15:00 GMT', 'server': 'Google Frontend', 'Content-Length': '237', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 18:14:59,371 DEBUG: Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYxNjg5NzAwLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.QVlHdwTqF1YqL4tGweuG8dblmNB5LX7P5LOkzu2cBgA', 'token_type': 'Bearer'}
