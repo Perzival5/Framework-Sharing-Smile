@@ -34,3 +34,122 @@
 2025-10-21 18:14:59,371 INFO: Status code: 200
 2025-10-21 18:14:59,371 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'b003f6226fd18ba597139994c8f8b456', 'date': 'Tue, 21 Oct 2025 22:15:00 GMT', 'server': 'Google Frontend', 'Content-Length': '237', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 2025-10-21 18:14:59,371 DEBUG: Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYxNjg5NzAwLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.QVlHdwTqF1YqL4tGweuG8dblmNB5LX7P5LOkzu2cBgA', 'token_type': 'Bearer'}
+2025-10-21 21:53:31,616 INFO: HTTP method: POST
+2025-10-21 21:53:31,618 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:31,618 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:31,619 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:31,619 DEBUG: Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'admin'}
+2025-10-21 21:53:31,620 INFO: Timestamp: 2025-10-21 21:53:31
+2025-10-21 21:53:31,620 INFO: Status code: 200
+2025-10-21 21:53:31,621 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '7cb1bba1b6b56578c4ecb8db36105df2;o=1', 'date': 'Wed, 22 Oct 2025 01:53:31 GMT', 'server': 'Google Frontend', 'Content-Length': '233', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:31,621 DEBUG: Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNzAyODExLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.dG3x9Q-qDmBUPdV0va374Xgl_k62IEFveGAh2til9hc', 'token_type': 'Bearer'}
+2025-10-21 21:53:32,435 INFO: HTTP method: POST
+2025-10-21 21:53:32,436 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:32,436 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:32,436 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:32,436 DEBUG: Request payload: {'username': 'profesional@project-x.com', 'password': 'profesional'}
+2025-10-21 21:53:32,437 INFO: Timestamp: 2025-10-21 21:53:32
+2025-10-21 21:53:32,437 INFO: Status code: 200
+2025-10-21 21:53:32,438 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'b42ae5e7ada49fe69ba0efc714039286', 'date': 'Wed, 22 Oct 2025 01:53:32 GMT', 'server': 'Google Frontend', 'Content-Length': '237', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:32,438 DEBUG: Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYxNzAyODEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.JDLgN8kBIDi4INFz8TkXzuxv_jPxv8sPt-5cRAz0X0M', 'token_type': 'Bearer'}
+2025-10-21 21:53:32,906 INFO: HTTP method: POST
+2025-10-21 21:53:32,907 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:32,907 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:32,907 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:32,907 DEBUG: Request payload: {'username': 'noregistrado@hotmail.com', 'password': 'admin'}
+2025-10-21 21:53:32,908 INFO: Timestamp: 2025-10-21 21:53:32
+2025-10-21 21:53:32,910 INFO: Status code: 401
+2025-10-21 21:53:32,910 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '0f4c6deb614b0b70f2400ba8f451cb11', 'date': 'Wed, 22 Oct 2025 01:53:33 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:32,911 DEBUG: Response payload: {'detail': 'Incorrect username or password'}
+2025-10-21 21:53:33,735 INFO: HTTP method: POST
+2025-10-21 21:53:33,736 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:33,736 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:33,736 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:33,737 DEBUG: Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'error'}
+2025-10-21 21:53:33,737 INFO: Timestamp: 2025-10-21 21:53:33
+2025-10-21 21:53:33,738 INFO: Status code: 401
+2025-10-21 21:53:33,738 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '658dbc89f161d4288f65446de5aa886d', 'date': 'Wed, 22 Oct 2025 01:53:34 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:33,739 DEBUG: Response payload: {'detail': 'Incorrect username or password'}
+2025-10-21 21:53:34,195 INFO: HTTP method: POST
+2025-10-21 21:53:34,196 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:34,196 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:34,197 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:34,197 DEBUG: Request payload: {'username': '', 'password': ''}
+2025-10-21 21:53:34,198 INFO: Timestamp: 2025-10-21 21:53:34
+2025-10-21 21:53:34,198 INFO: Status code: 422
+2025-10-21 21:53:34,198 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '379ba692f448b166051ff8e6be34373e', 'date': 'Wed, 22 Oct 2025 01:53:34 GMT', 'server': 'Google Frontend', 'Content-Length': '274', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:34,199 DEBUG: Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
+2025-10-21 21:53:34,664 INFO: HTTP method: POST
+2025-10-21 21:53:34,665 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:34,665 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:34,666 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:34,666 DEBUG: Request payload: {'username': '', 'password': 'profesional'}
+2025-10-21 21:53:34,668 INFO: Timestamp: 2025-10-21 21:53:34
+2025-10-21 21:53:34,668 INFO: Status code: 422
+2025-10-21 21:53:34,669 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '8ff069098453ec5d52b2bfad1d0b4901', 'date': 'Wed, 22 Oct 2025 01:53:35 GMT', 'server': 'Google Frontend', 'Content-Length': '143', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:34,669 DEBUG: Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
+2025-10-21 21:53:35,144 INFO: HTTP method: POST
+2025-10-21 21:53:35,144 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:35,145 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:35,145 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:35,145 DEBUG: Request payload: {'username': 'profesional@project-x.com', 'password': ''}
+2025-10-21 21:53:35,146 INFO: Timestamp: 2025-10-21 21:53:35
+2025-10-21 21:53:35,146 INFO: Status code: 422
+2025-10-21 21:53:35,147 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '26c869eaa8a00cd315b4588ce92b25d0', 'date': 'Wed, 22 Oct 2025 01:53:35 GMT', 'server': 'Google Frontend', 'Content-Length': '143', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:35,147 DEBUG: Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
+2025-10-21 21:53:35,644 INFO: HTTP method: POST
+2025-10-21 21:53:35,644 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:35,645 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:35,645 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:35,645 DEBUG: Request payload: {'username': 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', 'password': 'admin'}
+2025-10-21 21:53:35,646 INFO: Timestamp: 2025-10-21 21:53:35
+2025-10-21 21:53:35,646 INFO: Status code: 401
+2025-10-21 21:53:35,647 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '5328c8fc29427daa6c67a2cd560620ff', 'date': 'Wed, 22 Oct 2025 01:53:35 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:35,647 DEBUG: Response payload: {'detail': 'Incorrect username or password'}
+2025-10-21 21:53:36,259 INFO: HTTP method: GET
+2025-10-21 21:53:36,260 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:36,260 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:36,260 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:36,260 DEBUG: Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'admin'}
+2025-10-21 21:53:36,261 INFO: Timestamp: 2025-10-21 21:53:36
+2025-10-21 21:53:36,262 INFO: Status code: 400
+2025-10-21 21:53:36,262 DEBUG: Response headers: {'Content-Type': 'text/html; charset=UTF-8', 'Referrer-Policy': 'no-referrer', 'Content-Length': '1555', 'Date': 'Wed, 22 Oct 2025 01:53:36 GMT'}
+2025-10-21 21:53:36,263 DEBUG: Response text: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 400 (Bad Request)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>400.</b> <ins>That’s an error.</ins>
+  <p>Your client has issued a malformed or illegal request.  <ins>That’s all we know.</ins>
+
+2025-10-21 21:53:36,791 INFO: HTTP method: PUT
+2025-10-21 21:53:36,791 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:36,792 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:36,792 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:36,792 DEBUG: Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'admin'}
+2025-10-21 21:53:36,793 INFO: Timestamp: 2025-10-21 21:53:36
+2025-10-21 21:53:36,793 INFO: Status code: 405
+2025-10-21 21:53:36,794 DEBUG: Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': 'c137845d5cc4bd50b91f9fa37f88eb1b', 'date': 'Wed, 22 Oct 2025 01:53:37 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:36,794 DEBUG: Response payload: {'detail': 'Method Not Allowed'}
+2025-10-21 21:53:37,278 INFO: HTTP method: DELETE
+2025-10-21 21:53:37,279 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:37,279 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:37,280 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:37,280 DEBUG: Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'admin'}
+2025-10-21 21:53:37,281 INFO: Timestamp: 2025-10-21 21:53:37
+2025-10-21 21:53:37,281 INFO: Status code: 405
+2025-10-21 21:53:37,281 DEBUG: Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': '4da90b965eb6833894e113dca17f7d4b', 'date': 'Wed, 22 Oct 2025 01:53:37 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:37,282 DEBUG: Response payload: {'detail': 'Method Not Allowed'}
+2025-10-21 21:53:37,748 INFO: HTTP method: POST
+2025-10-21 21:53:37,749 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-21 21:53:37,749 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+2025-10-21 21:53:37,750 DEBUG: Request headers: {'accept': 'application/json'}
+2025-10-21 21:53:37,750 DEBUG: Request payload: {}
+2025-10-21 21:53:37,750 INFO: Timestamp: 2025-10-21 21:53:37
+2025-10-21 21:53:37,751 INFO: Status code: 422
+2025-10-21 21:53:37,751 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '827a039a615e9f2692172e245654eb3a', 'date': 'Wed, 22 Oct 2025 01:53:38 GMT', 'server': 'Google Frontend', 'Content-Length': '274', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-21 21:53:37,752 DEBUG: Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
