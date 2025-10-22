@@ -2,6 +2,7 @@ from enum import Enum
 
 class StaticStatus(Enum):
     ok = 200
+    created = 201
     bad_request = 400
     unauthorized = 401
     method_not_allowed = 405

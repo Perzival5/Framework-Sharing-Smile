@@ -153,3 +153,147 @@
 2025-10-21 21:53:37,751 INFO: Status code: 422
 2025-10-21 21:53:37,751 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '827a039a615e9f2692172e245654eb3a', 'date': 'Wed, 22 Oct 2025 01:53:38 GMT', 'server': 'Google Frontend', 'Content-Length': '274', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
 2025-10-21 21:53:37,752 DEBUG: Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'username'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}, {'type': 'missing', 'loc': ['body', 'password'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
+2025-10-22 17:12:15,151 INFO: HTTP method: POST
+2025-10-22 17:12:15,152 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:12:15,153 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:12:15,153 DEBUG: Request headers: {'accept': 'application/json', 'Content-Type': 'multipart/form-data', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:12:15,153 DEBUG: Request payload: {'first_name': 'John', 'last_name': 'Wood', 'date_of_birth': '1980-03-11', 'sex': 'femenino', 'country': 'DO', 'dni': '22707470', 'personal_email': 'xwhite@example.org', 'phone': '(416)931-0935x77503', 'profession': 'Podiatrist', 'specialty': 'necessary', 'city': 'Lake Heatherberg', 'province': 'Arkansas', 'address': '6029 Michelle Trail\nToddchester, MO 27484'}
+2025-10-22 17:12:15,154 INFO: Timestamp: 2025-10-22 17:12:15
+2025-10-22 17:12:15,154 INFO: Status code: 400
+2025-10-22 17:12:15,155 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'a7cf7964acc4b262e32301c15770713d;o=1', 'date': 'Wed, 22 Oct 2025 21:12:16 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:12:15,155 DEBUG: Response payload: {'detail': 'Missing boundary in multipart.'}
+2025-10-22 17:12:50,904 INFO: HTTP method: POST
+2025-10-22 17:12:50,905 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:12:50,905 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:12:50,905 DEBUG: Request headers: {'accept': 'application/json', 'Content-Type': 'multipart/form-data', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:12:50,905 DEBUG: Request payload: {'first_name': 'Suzanne', 'last_name': 'Smith', 'date_of_birth': '1984-10-04', 'sex': 'masculino', 'country': 'PE', 'dni': '67050669', 'personal_email': 'jessica54@example.net', 'phone': '738-651-9134x71991', 'profession': 'Investment banker, operational', 'specialty': 'Congress', 'city': 'North Karenport', 'province': 'Washington', 'address': '8891 Jo Mount Suite 345\nRobertmouth, VT 67226'}
+2025-10-22 17:12:50,906 INFO: Timestamp: 2025-10-22 17:12:50
+2025-10-22 17:12:50,907 INFO: Status code: 400
+2025-10-22 17:12:50,907 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '3f7b792855275f8d2447ddcd014e6c80;o=1', 'date': 'Wed, 22 Oct 2025 21:12:52 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:12:50,908 DEBUG: Response payload: {'detail': 'Missing boundary in multipart.'}
+2025-10-22 17:17:23,441 INFO: HTTP method: POST
+2025-10-22 17:17:23,442 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:17:23,443 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:17:23,443 DEBUG: Request headers: {'accept': 'application/json', 'Content-Type': 'multipart/form-data', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:17:23,443 DEBUG: Request payload: {'first_name': 'Carrie', 'last_name': 'Alvarado', 'date_of_birth': '2006-10-27', 'sex': 'femenino', 'country': 'BO', 'dni': '20446592', 'personal_email': 'suzannestewart@example.org', 'phone': '63941826', 'profession': 'Animal nutritionist', 'specialty': 'PM', 'city': 'North Susan', 'province': 'Massachusetts', 'address': '2932 Kimberly Plains\nThompsonfurt, TX 48653'}
+2025-10-22 17:17:23,444 INFO: Timestamp: 2025-10-22 17:17:23
+2025-10-22 17:17:23,444 INFO: Status code: 400
+2025-10-22 17:17:23,445 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '5fba7b05d3fcc35f7098ed836098c2ab;o=1', 'date': 'Wed, 22 Oct 2025 21:17:24 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:17:23,445 DEBUG: Response payload: {'detail': 'Missing boundary in multipart.'}
+2025-10-22 17:17:40,705 INFO: HTTP method: POST
+2025-10-22 17:17:40,706 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:17:40,707 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:17:40,707 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:17:40,707 DEBUG: Request payload: {'first_name': 'Aaron', 'last_name': 'Johnson', 'date_of_birth': '1997-06-19', 'sex': 'masculino', 'country': 'AR', 'dni': '93487719', 'personal_email': 'laura70@example.net', 'phone': '43735160', 'profession': 'Learning disability nurse', 'specialty': 'drop', 'city': 'Gonzalezstad', 'province': 'North Carolina', 'address': '71599 Osborne Mission\nGomezborough, KS 84732'}
+2025-10-22 17:17:40,710 INFO: Timestamp: 2025-10-22 17:17:40
+2025-10-22 17:17:40,710 INFO: Status code: 422
+2025-10-22 17:17:40,710 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '184f8914fbb9cb5730f61f49d6e20a0f;o=1', 'date': 'Wed, 22 Oct 2025 21:17:42 GMT', 'server': 'Google Frontend', 'Content-Length': '140', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:17:40,711 DEBUG: Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'photo'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
+2025-10-22 17:17:52,392 INFO: HTTP method: POST
+2025-10-22 17:17:52,393 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:17:52,394 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:17:52,394 DEBUG: Request headers: {'accept': 'application/json', 'Content-Type': 'multipart/form-data', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:17:52,394 DEBUG: Request payload: {'first_name': 'William', 'last_name': 'Fisher', 'date_of_birth': '1978-01-06', 'sex': 'masculino', 'country': 'US', 'dni': '39033970', 'personal_email': 'rterry@example.net', 'phone': '83565273', 'profession': 'Therapist, drama', 'specialty': 'player', 'city': 'Lake Kelliville', 'province': 'New Jersey', 'address': '350 Jones River Suite 854\nSouth Lindseyport, UT 62851'}
+2025-10-22 17:17:52,395 INFO: Timestamp: 2025-10-22 17:17:52
+2025-10-22 17:17:52,395 INFO: Status code: 400
+2025-10-22 17:17:52,396 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'c89e0741575c626c9e1ebcbcd598d2d0;o=1', 'date': 'Wed, 22 Oct 2025 21:17:53 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:17:52,396 DEBUG: Response payload: {'detail': 'Missing boundary in multipart.'}
+2025-10-22 17:23:25,262 INFO: HTTP method: POST
+2025-10-22 17:23:25,263 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:23:25,264 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:23:25,264 DEBUG: Request headers: {'accept': 'application/json', 'Content-Type': 'multipart/form-data', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:23:25,264 DEBUG: Request payload: {'first_name': 'Anne', 'last_name': 'Klein', 'date_of_birth': '1999-04-05', 'sex': 'femenino', 'country': 'DO', 'dni': '45911222', 'personal_email': 'javier27@example.org', 'phone': '90542148', 'profession': 'Network engineer', 'specialty': 'fill', 'city': 'Bergview', 'province': 'Arizona', 'address': '182 Edward Forge Suite 792\nPaulmouth, VI 13989'}
+2025-10-22 17:23:25,265 INFO: Timestamp: 2025-10-22 17:23:25
+2025-10-22 17:23:25,265 INFO: Status code: 400
+2025-10-22 17:23:25,266 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'd9cc3f972f7797329fb8858c5bef9915;o=1', 'date': 'Wed, 22 Oct 2025 21:23:26 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:23:25,266 DEBUG: Response payload: {'detail': 'Missing boundary in multipart.'}
+2025-10-22 17:24:39,279 INFO: HTTP method: POST
+2025-10-22 17:24:39,280 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:24:39,281 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:24:39,281 DEBUG: Request headers: {'accept': 'application/json', 'Content-Type': 'multipart/form-data', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:24:39,281 DEBUG: Request payload: {'first_name': 'Allison', 'last_name': 'Meza', 'date_of_birth': '1972-11-15', 'sex': 'masculino', 'country': 'DO', 'dni': '97339586', 'personal_email': 'jenny36@example.com', 'phone': '56692793', 'profession': 'Museum/gallery exhibitions officer', 'specialty': 'similar', 'city': 'South Katherineberg', 'province': 'Louisiana', 'address': 'PSC 2060, Box 6854\nAPO AP 91003'}
+2025-10-22 17:24:39,283 INFO: Timestamp: 2025-10-22 17:24:39
+2025-10-22 17:24:39,283 INFO: Status code: 400
+2025-10-22 17:24:39,284 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '359c9ee35521dd3d817dc968983a90e8;o=1', 'date': 'Wed, 22 Oct 2025 21:24:40 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:24:39,285 DEBUG: Response payload: {'detail': 'Missing boundary in multipart.'}
+2025-10-22 17:28:25,959 INFO: HTTP method: POST
+2025-10-22 17:28:25,960 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:28:25,961 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:28:25,961 DEBUG: Request headers: {'accept': 'application/json', 'Content-Type': 'multipart/form-data', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:28:25,961 DEBUG: Request payload: {'first_name': 'Dawn', 'last_name': 'Tran', 'date_of_birth': '12/12/1997', 'sex': 'masculino', 'country': 'PE', 'dni': '75921847', 'personal_email': 'iwatkins@example.net', 'phone': '70818194', 'profession': 'Intelligence analyst', 'specialty': 'control', 'city': 'New Derrickville', 'province': 'New Hampshire', 'address': '0573 Patricia Radial Suite 559\nWest Elizabethfurt, TX 86399'}
+2025-10-22 17:28:25,962 INFO: Timestamp: 2025-10-22 17:28:25
+2025-10-22 17:28:25,962 INFO: Status code: 400
+2025-10-22 17:28:25,963 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'ba2c30c985c72804050d785a26d94411;o=1', 'date': 'Wed, 22 Oct 2025 21:28:27 GMT', 'server': 'Google Frontend', 'Content-Length': '43', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:28:25,964 DEBUG: Response payload: {'detail': 'Missing boundary in multipart.'}
+2025-10-22 17:33:41,848 INFO: HTTP method: POST
+2025-10-22 17:33:41,849 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:33:41,850 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:33:41,850 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:33:41,850 DEBUG: Request payload: {'first_name': 'Jeanette', 'last_name': 'Anderson', 'date_of_birth': '18/07/1968', 'sex': 'femenino', 'country': 'DO', 'dni': '95652511', 'personal_email': 'cruzdenise@example.net', 'phone': '44823537', 'profession': 'Warehouse manager', 'specialty': 'instead', 'city': 'Anthonyfurt', 'province': 'Colorado', 'address': '454 Christopher Circle\nLukeport, MT 16180'}
+2025-10-22 17:33:41,851 INFO: Timestamp: 2025-10-22 17:33:41
+2025-10-22 17:33:41,851 INFO: Status code: 422
+2025-10-22 17:33:41,852 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '503e419cd204bceae3bfb2144036ed2c;o=1', 'date': 'Wed, 22 Oct 2025 21:33:43 GMT', 'server': 'Google Frontend', 'Content-Length': '140', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:33:41,852 DEBUG: Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'photo'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
+2025-10-22 17:36:22,113 INFO: HTTP method: POST
+2025-10-22 17:36:22,114 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:36:22,115 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:36:22,115 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:36:22,115 DEBUG: Request payload: {'first_name': 'Heidi', 'last_name': 'Kennedy', 'date_of_birth': '23/03/1963', 'sex': 'femenino', 'country': 'AR', 'dni': '92005834', 'personal_email': 'ustewart@example.org', 'phone': '13814548', 'profession': 'Surveyor, quantity', 'specialty': 'land', 'city': 'Pereztown', 'province': 'Iowa', 'address': 'USCGC Johnson\nFPO AA 14855'}
+2025-10-22 17:36:22,116 INFO: Timestamp: 2025-10-22 17:36:22
+2025-10-22 17:36:22,116 INFO: Status code: 201
+2025-10-22 17:36:22,117 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '50cab50a9414682165dbd06253890f0c;o=1', 'date': 'Wed, 22 Oct 2025 21:36:23 GMT', 'server': 'Google Frontend', 'Content-Length': '395', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:36:22,117 DEBUG: Response payload: {'first_name': 'Heidi', 'last_name': 'Kennedy', 'date_of_birth': '1963-03-23', 'sex': 'femenino', 'country': 'AR', 'city': 'Pereztown', 'province': 'Iowa', 'address': 'USCGC Johnson\nFPO AA 14855', 'dni': '92005834', 'personal_email': 'ustewart@example.org', 'phone': '13814548', 'profession': 'Surveyor, quantity', 'specialty': 'land', 'photo_path': 'https://i.ibb.co/mrWtJqcw/3332dd630122.jpg', 'id': 3, 'is_deleted': False}
+2025-10-22 17:38:41,360 INFO: HTTP method: POST
+2025-10-22 17:38:41,361 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 17:38:41,361 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 17:38:41,361 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 17:38:41,362 DEBUG: Request payload: {'first_name': 'Kevin', 'last_name': 'Campos', 'date_of_birth': '20/09/1986', 'sex': 'masculino', 'country': 'DO', 'dni': '40066286', 'personal_email': 'andrereed@example.com', 'phone': '57515834', 'profession': 'Risk manager', 'specialty': 'resource', 'city': 'Port Daniel', 'province': 'Wyoming', 'address': '4369 Gutierrez Pass\nSmithburgh, ME 75254'}
+2025-10-22 17:38:41,363 INFO: Timestamp: 2025-10-22 17:38:41
+2025-10-22 17:38:41,363 INFO: Status code: 201
+2025-10-22 17:38:41,363 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '64a7e64e4759752b34a6501f2a32e485;o=1', 'date': 'Wed, 22 Oct 2025 21:38:42 GMT', 'server': 'Google Frontend', 'Content-Length': '413', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 17:38:41,364 DEBUG: Response payload: {'first_name': 'Kevin', 'last_name': 'Campos', 'date_of_birth': '1986-09-20', 'sex': 'masculino', 'country': 'DO', 'city': 'Port Daniel', 'province': 'Wyoming', 'address': '4369 Gutierrez Pass\nSmithburgh, ME 75254', 'dni': '40066286', 'personal_email': 'andrereed@example.com', 'phone': '57515834', 'profession': 'Risk manager', 'specialty': 'resource', 'photo_path': 'https://i.ibb.co/mrWtJqcw/3332dd630122.jpg', 'id': 4, 'is_deleted': False}
+2025-10-22 19:03:40,595 INFO: HTTP method: POST
+2025-10-22 19:03:40,596 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 19:03:40,597 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 19:03:40,597 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 19:03:40,597 DEBUG: Request payload: {'first_name': 'Stacy', 'last_name': 'Campbell', 'date_of_birth': '27/08/1992', 'sex': 'masculino', 'country': 'PE', 'dni': '52818824', 'personal_email': 'ericnovak@example.org', 'phone': '99359099', 'profession': 'Forensic psychologist', 'specialty': 'phone', 'city': 'Port Alanton', 'province': 'Arizona', 'address': '52670 Espinoza Key Suite 657\nLake Sonyabury, WY 93198'}
+2025-10-22 19:03:40,598 INFO: Timestamp: 2025-10-22 19:03:40
+2025-10-22 19:03:40,599 INFO: Status code: 201
+2025-10-22 19:03:40,599 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'ddc39586475e85325579eae7b7b2db97;o=1', 'date': 'Wed, 22 Oct 2025 23:03:40 GMT', 'server': 'Google Frontend', 'Content-Length': '435', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 19:03:40,599 DEBUG: Response payload: {'first_name': 'Stacy', 'last_name': 'Campbell', 'date_of_birth': '1992-08-27', 'sex': 'masculino', 'country': 'PE', 'city': 'Port Alanton', 'province': 'Arizona', 'address': '52670 Espinoza Key Suite 657\nLake Sonyabury, WY 93198', 'dni': '52818824', 'personal_email': 'ericnovak@example.org', 'phone': '99359099', 'profession': 'Forensic psychologist', 'specialty': 'phone', 'photo_path': 'https://i.ibb.co/mrWtJqcw/3332dd630122.jpg', 'id': 9, 'is_deleted': False}
+2025-10-22 19:04:26,479 INFO: HTTP method: POST
+2025-10-22 19:04:26,479 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 19:04:26,480 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 19:04:26,480 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 19:04:26,480 DEBUG: Request payload: {'first_name': 'Michael', 'last_name': 'Gibson', 'date_of_birth': '05/07/1958', 'sex': 'masculino', 'country': 'BO', 'dni': '33883786', 'personal_email': 'wrightgregory@example.com', 'phone': '56437870', 'profession': 'Research officer, government', 'specialty': 'can', 'city': 'Teresachester', 'province': 'Minnesota', 'address': '359 Ana Cove\nSextonmouth, CT 37141'}
+2025-10-22 19:04:26,481 INFO: Timestamp: 2025-10-22 19:04:26
+2025-10-22 19:04:26,489 INFO: Status code: 201
+2025-10-22 19:04:26,490 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '9ba4e10b6e0edb1cddd691769f9ee3f2;o=1', 'date': 'Wed, 22 Oct 2025 23:04:26 GMT', 'server': 'Google Frontend', 'Content-Length': '429', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 19:04:26,491 DEBUG: Response payload: {'first_name': 'Michael', 'last_name': 'Gibson', 'date_of_birth': '1958-07-05', 'sex': 'masculino', 'country': 'BO', 'city': 'Teresachester', 'province': 'Minnesota', 'address': '359 Ana Cove\nSextonmouth, CT 37141', 'dni': '33883786', 'personal_email': 'wrightgregory@example.com', 'phone': '56437870', 'profession': 'Research officer, government', 'specialty': 'can', 'photo_path': 'https://i.ibb.co/mrWtJqcw/3332dd630122.jpg', 'id': 10, 'is_deleted': False}
+2025-10-22 19:08:06,245 INFO: HTTP method: POST
+2025-10-22 19:08:06,247 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 19:08:06,247 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 19:08:06,248 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 19:08:06,248 DEBUG: Request payload: {'first_name': 'Steven', 'last_name': 'Allen', 'date_of_birth': '04/11/1984', 'sex': 'femenino', 'country': 'AR', 'dni': '46254183', 'personal_email': 'paul77@example.com', 'phone': '63099047', 'profession': 'Theme park manager', 'specialty': 'end', 'city': 'Donnatown', 'province': 'Delaware', 'address': 'USCGC Moreno\nFPO AE 39559'}
+2025-10-22 19:08:06,249 INFO: Timestamp: 2025-10-22 19:08:06
+2025-10-22 19:08:06,249 INFO: Status code: 201
+2025-10-22 19:08:06,250 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'b16f7ce44770094ea11a6273a1a478c8;o=1', 'date': 'Wed, 22 Oct 2025 23:08:06 GMT', 'server': 'Google Frontend', 'Content-Length': '395', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 19:08:06,250 DEBUG: Response payload: {'first_name': 'Steven', 'last_name': 'Allen', 'date_of_birth': '1984-11-04', 'sex': 'femenino', 'country': 'AR', 'city': 'Donnatown', 'province': 'Delaware', 'address': 'USCGC Moreno\nFPO AE 39559', 'dni': '46254183', 'personal_email': 'paul77@example.com', 'phone': '63099047', 'profession': 'Theme park manager', 'specialty': 'end', 'photo_path': 'https://i.ibb.co/mrWtJqcw/3332dd630122.jpg', 'id': 11, 'is_deleted': False}
+2025-10-22 19:34:41,675 INFO: HTTP method: POST
+2025-10-22 19:34:41,677 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 19:34:41,678 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+2025-10-22 19:34:41,678 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 19:34:41,678 DEBUG: Request payload: {'first_name': 'Dana', 'last_name': 'Jones', 'date_of_birth': '24/03/1977', 'sex': 'masculino', 'country': 'US', 'dni': '42589221', 'personal_email': 'barajasmaureen@example.org', 'phone': '29134621', 'profession': 'Engineer, communications', 'specialty': 'people', 'city': 'Rebeccafurt', 'province': 'Wyoming', 'address': '444 Cindy Forges Suite 443\nLake Jesse, MD 66632'}
+2025-10-22 19:34:41,679 INFO: Timestamp: 2025-10-22 19:34:41
+2025-10-22 19:34:41,679 INFO: Status code: 201
+2025-10-22 19:34:41,680 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '4c8fab0320d96bc6f3be4e38a0986860;o=1', 'date': 'Wed, 22 Oct 2025 23:34:41 GMT', 'server': 'Google Frontend', 'Content-Length': '434', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 19:34:41,680 DEBUG: Response payload: {'first_name': 'Dana', 'last_name': 'Jones', 'date_of_birth': '1977-03-24', 'sex': 'masculino', 'country': 'US', 'city': 'Rebeccafurt', 'province': 'Wyoming', 'address': '444 Cindy Forges Suite 443\nLake Jesse, MD 66632', 'dni': '42589221', 'personal_email': 'barajasmaureen@example.org', 'phone': '29134621', 'profession': 'Engineer, communications', 'specialty': 'people', 'photo_path': 'https://i.ibb.co/mrWtJqcw/3332dd630122.jpg', 'id': 12, 'is_deleted': False}
+2025-10-22 19:34:42,189 INFO: HTTP method: DELETE
+2025-10-22 19:34:42,190 INFO: Domain: project-x-829879158579.southamerica-west1.run.app
+2025-10-22 19:34:42,190 DEBUG: Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/12
+2025-10-22 19:34:42,190 DEBUG: Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYxNjIxMzEzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.gDKjOagl6Yo6ai8m0zV2ckSGWM4c1LiD--mZE4mNSFA'}
+2025-10-22 19:34:42,190 DEBUG: Request payload: None
+2025-10-22 19:34:42,191 INFO: Timestamp: 2025-10-22 19:34:42
+2025-10-22 19:34:42,192 INFO: Status code: 204
+2025-10-22 19:34:42,192 DEBUG: Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '19ed8a877a668f6f199df6aeae1243c2', 'date': 'Wed, 22 Oct 2025 23:34:42 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+2025-10-22 19:34:42,193 DEBUG: Response text: 
