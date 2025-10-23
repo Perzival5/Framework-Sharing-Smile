@@ -17,3 +17,8 @@ def get_file_txt():
     return {
         "photo": ("imagen.txt", open(os.path.join(BASE_PATH, "imagen.txt"), "rb"), "text/plain")
     }
+
+def get_file_BIG():
+    return {
+        "photo": ("big.png", open(os.path.join(BASE_PATH, "big.png"), "rb"), "image/png")
+    }

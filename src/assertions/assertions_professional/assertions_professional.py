@@ -1,5 +1,7 @@
 import re
 from datetime import datetime
+from src.assertions.global_assertions import *
+from src.common.static_status import StaticStatus
 
 def assert_payload_professional(request):
     required_fields = [
@@ -87,7 +89,7 @@ def assert_reponse_item(response, missing_field):
 
 def assert_response_validation_error_400(response):
     detail = response.json().get("detail", "")
-    expected = "1 validation error for ProfessionalCreate\nsex\n  Value error"
+    expected = "1 validation error for ProfessionalCreate"
     assert expected in detail, (
         f"No se encontró el mensaje esperado en detail.\n"
         f"Esperado (parcial): {expected}\n"
@@ -102,3 +104,31 @@ def assert_response_validation_error_400_date_photo(response, expected_message):
         f"Recibido: {detail}"
     )
 
+def assert_response_500(response):
+
+    body = getattr(response, "text", None) or getattr(response, "content", b"")
+    if isinstance(body, bytes):
+        try:
+            body = body.decode("utf-8", errors="ignore")
+        except Exception:
+            body = str(body)
+
+    expected = "Internal Server Error"
+    assert body.strip() == expected, (
+        f"Mensaje inesperado en body.\n"
+        f"Esperado: {expected}\n"
+        f"Recibido: {body}"
+    )
+
+def assert_responde_falled_http(response, file, type):
+    if type == "DR-TC50":
+        assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+        assert "<title>Error 400 (Bad Request)!!!</title>" in response.text
+
+    elif type == "DR-TC51" or type == "DR-TC52":
+        assert_response_status_code(response.status_code, StaticStatus.method_not_allowed.value)
+        assert_schema(response.json(), "schema_405.json", file)
+        assert response.json()["detail"] == "Method Not Allowed"
+
+    else:
+        raise ValueError(f"Tipo de caso no soportado: {type}")

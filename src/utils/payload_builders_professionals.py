@@ -20,19 +20,22 @@ def build_user_payload(
     address: str | None = None,
 ) -> dict:
     payload = {
-        "first_name": first_name or fake.first_name(),
-        "last_name": last_name or fake.last_name(),
-        "date_of_birth": date_of_birth or fake.date_of_birth(minimum_age=18, maximum_age=70).strftime("%d/%m/%Y"),
-        "sex": sex or random.choice(["masculino", "femenino"]),
-        "country": country or random.choice(list(COUNTRIES.values())),
-        "dni": dni or str(fake.random_number(digits=8, fix_len=True)),
-        "personal_email": personal_email or fake.email(),
-        "phone": phone or str(fake.random_number(digits=8, fix_len=True)),
-        "profession": profession or fake.job(),
-        "specialty": specialty or fake.word(),
-        "city": city or fake.city(),
-        "province": province or fake.state(),
-        "address": address or fake.address(),
+        "first_name": fake.first_name() if first_name is None else first_name,
+        "last_name": fake.last_name() if last_name is None else last_name,
+        "date_of_birth": (
+            fake.date_of_birth(minimum_age=18, maximum_age=70).strftime("%d/%m/%Y")
+            if date_of_birth is None else date_of_birth
+        ),
+        "sex": random.choice(["masculino", "femenino"]) if sex is None else sex,
+        "country": random.choice(list(COUNTRIES.values())) if country is None else country,
+        "dni": str(fake.random_number(digits=8, fix_len=True)) if dni is None else dni,
+        "personal_email": fake.email() if personal_email is None else personal_email,
+        "phone": str(fake.random_number(digits=8, fix_len=True)) if phone is None else phone,
+        "profession": fake.job() if profession is None else profession,
+        "specialty": fake.word() if specialty is None else specialty,
+        "city": fake.city() if city is None else city,
+        "province": fake.state() if province is None else province,
+        "address": fake.address() if address is None else address,
     }
     
     return payload

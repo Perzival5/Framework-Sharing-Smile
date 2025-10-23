@@ -35,8 +35,53 @@ input_invalid = [
     {"id": "DR-TC34", "item": "phone", "input": "letras"},
 ]
 
+input_large = [
+    {"id": "DR-TC36", "item": "first_name", "input": "AlejandroMaximilianoGonzalezFernandezSantosPerez"},
+    {"id": "DR-TC37", "item": "last_name", "input": "RodriguezMartinezFernandezDelCampoGutierrezLopez"},
+    {"id": "DR-TC40", "item": "city", "input": "CochabambaMetropolitanaZonaCentroIndustrialSur"},
+    {"id": "DR-TC41", "item": "province", "input": "ChapareTropicalRegionNorteExtensaMontañosaCasa"},
+    {"id": "DR-TC42", "item": "address", "input": "Av.HeroesDelChacoNro4567ZonaCentralEdificioLibertadPiso8DepartamentoBReferenciaPlazaColonFrenteABancoUnion"},
+    {"id": "DR-TC43", "item": "dni", "input": "12345678901654"},
+    {"id": "DR-TC44", "item": "personal_email", "input": "juan.perez.excedidolongituddemaasdasgagsdasfeciendecaracteresparaelcampodeemailprofesional@ejemplopruebalarga.com"},
+    {"id": "DR-TC45", "item": "phone", "input": "7896541230911"},
+    {"id": "DR-TC46", "item": "profession", "input": "IngenieroDesarrolladorDeSoftwareEspecialistaEnArquitecturaDeSistemasDistribuidosEmpresarialesCloudAmzonico"},
+    {"id": "DR-TC47", "item": "specialty", "input": "NeurocirujanoEspecialistaEnMicrocirugiaCerebralYColumnaVertebralAvanzadaConEntrenamientoInternacionalCertificado"},
+]
+
+input_large_special_pro = [
+    {"id": "DR-TC38", "item": "sex", "input": "masculinofemeninootro"},
+    {"id": "DR-TC39", "item": "country", "input": "china"},
+]
+
+token = [
+    {"id": "DR-TC49", "header":"header_login", "title":"sin autenticación", "message":"Not authenticated", "status":401},
+    {"id": "DR-TC61", "header":"header_token_invalid", "title":"con token invalido", "message":"Invalid token", "status":401},
+    {"id": "DR-TC62", "header":"header_without_permits", "title":"con token sin permisos", "message":"Not enough permissions", "status":403},
+]
+
 http_methods_invalid = [
-    {"id": "DR-TC09", "method": "GET", "username": config.ADMIN_USER, "password": config.ADMIN_PASS},
-    {"id": "DR-TC10", "method": "PUT", "username": config.ADMIN_USER, "password": config.ADMIN_PASS},
-    {"id": "DR-TC11", "method": "DELETE", "username": config.ADMIN_USER, "password": config.ADMIN_PASS},
+    {"id": "DR-TC50", "item": "GET"},
+    {"id": "DR-TC51", "item": "PUT"},
+    {"id": "DR-TC52", "item": "DELETE"},
+]
+
+duplicate = [
+    {"id": "DR-TC53", "item": "personal_email", "input":"profesional@project-x.com"},
+    {"id": "DR-TC54", "item": "dni", "input":"70707070"},
+    {"id": "DR-TC55", "item": "phone", "input":"70707070"},
+]
+
+valid_sex = [
+    {"id": "DR-TC63", "item": "sex", "input":"masculino"},
+    {"id": "DR-TC64", "item": "sex", "input":"femenino"},
+]
+
+valid_country = [
+    {"id": "DR-TC65", "item": "country", "title": "Bolivia", "input" : "BO",},
+    {"id": "DR-TC66", "item": "country", "title": "México", "input" : "MX",},
+    {"id": "DR-TC67", "item": "country", "title": "Perú", "input" : "PE",},
+    {"id": "DR-TC68", "item": "country", "title": "República Dominicana", "input" : "DO",},
+    {"id": "DR-TC69", "item": "country", "title": "Estados Unidos", "input" : "US",},
+    {"id": "DR-TC70", "item": "country", "title": "Argentina", "input" : "AR",},
+    {"id": "DR-TC71", "item": "country", "title": "Brasil", "input" : "BR",},
 ]
