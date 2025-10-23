@@ -78,3 +78,27 @@ def assert_response_profesional(response, request):
     assert response.get("is_deleted") is False, \
         f"is_deleted debería ser False, recibido: {response.get('is_deleted')}"
 
+def assert_reponse_item(response, missing_field):
+    detail = response.json().get("detail", [])
+    assert any(
+        err.get("loc") == ["body", missing_field] and err.get("type") == "missing"
+        for err in detail
+    ), f"No se encontró error de campo requerido para '{missing_field}' en {detail}"
+
+def assert_response_validation_error_400(response):
+    detail = response.json().get("detail", "")
+    expected = "1 validation error for ProfessionalCreate\nsex\n  Value error"
+    assert expected in detail, (
+        f"No se encontró el mensaje esperado en detail.\n"
+        f"Esperado (parcial): {expected}\n"
+        f"Recibido: {detail}"
+    )
+
+def assert_response_validation_error_400_date_photo(response, expected_message):
+    detail = response.json().get("detail")
+    assert detail == expected_message, (
+        f"Mensaje inesperado en detail.\n"
+        f"Esperado: {expected_message}\n"
+        f"Recibido: {detail}"
+    )
+

@@ -12,3 +12,8 @@ def get_file_patient():
     return {
         "photo": ("patient.png", open(os.path.join(BASE_PATH, "patient.png"), "rb"), "image/png")
     }
+
+def get_file_txt():
+    return {
+        "photo": ("imagen.txt", open(os.path.join(BASE_PATH, "imagen.txt"), "rb"), "text/plain")
+    }
