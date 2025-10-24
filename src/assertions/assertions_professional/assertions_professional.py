@@ -125,10 +125,52 @@ def assert_responde_falled_http(response, file, type):
         assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
         assert "<title>Error 400 (Bad Request)!!!</title>" in response.text
 
-    elif type == "DR-TC51" or type == "DR-TC52":
+    elif type == "DR-TC51" or type == "DR-TC52" or type == "DR-TC79" or type == "DR-TC80":
         assert_response_status_code(response.status_code, StaticStatus.method_not_allowed.value)
         assert_schema(response.json(), "schema_405.json", file)
         assert response.json()["detail"] == "Method Not Allowed"
 
     else:
         raise ValueError(f"Tipo de caso no soportado: {type}")
+    
+#get
+
+def assert_professionals_list_format(response_data):
+    if isinstance(response_data, dict):
+        response_list = [response_data]
+    elif isinstance(response_data, list):
+        response_list = response_data
+    else:
+        raise AssertionError(f"Respuesta inesperada: {type(response_data)}")
+
+    assert len(response_list) > 0, "La lista de profesionales está vacía"
+    nullable_fields = {"city", "province", "address"}
+
+    for idx, prof in enumerate(response_list, start=1):
+        for field, value in prof.items():
+            if field not in nullable_fields:
+                assert value not in ("", None), f"Campo '{field}' vacío en item {idx}"
+
+
+            if field == "date_of_birth":
+                try:
+                    datetime.strptime(value, "%Y-%m-%d")
+                except Exception:
+                    raise AssertionError(f"date_of_birth inválido en item {idx}: {value}")
+
+            if field == "personal_email":
+                assert re.match(r"[^@]+@[^@]+\.[^@]+", value), \
+                    f"Email inválido en item {idx}: {value}"
+
+            if field == "photo_path":
+                assert re.match(r"^https?://", value), \
+                    f"photo_path inválido en item {idx}: {value}"
+
+            if field == "id":
+                assert isinstance(value, int) and value > 0, \
+                    f"id inválido en item {idx}: {value}"
+
+            if field == "is_deleted":
+                assert isinstance(value, bool), f"is_deleted no es booleano en item {idx}: {value}"
+                assert value is False, f"is_deleted debería ser False en item {idx}, recibido: {value}"
+
