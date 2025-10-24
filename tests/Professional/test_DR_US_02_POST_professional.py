@@ -14,7 +14,7 @@ from src.resources.files import *
 from src.resources.bad_request_POST_profesional import register, special, date_birth, input_invalid, input_large, input_large_special_pro, token, http_methods_invalid, duplicate, valid_sex, valid_country
 
 def test_Verificar_registro_de_profesional_con_todos_los_campos_válidos(get_url,teardown_professional):
-    allure.dynamic.title(f"DR-TC13: Verificar registro de profesional con todos los campos válidos")
+    allure.dynamic.title("DR-TC13: Verificar registro de profesional con todos los campos válidos")
     request=build_user_payload()
     assert_schema(request, "schema_input.json", StaticDataModules.professionals.name)
     assert_payload_professional(request)
@@ -26,7 +26,7 @@ def test_Verificar_registro_de_profesional_con_todos_los_campos_válidos(get_url
     teardown_professional(response.json()["id"])
 
 def test_Verificar_registro_de_profesional_unicamente_con_los_campos_obligatorios(get_url,teardown_professional):
-    allure.dynamic.title(f"DR-TC14: Verificar registro de profesional únicamente con los campos obligatorios")
+    allure.dynamic.title("DR-TC14: Verificar registro de profesional únicamente con los campos obligatorios")
     request=build_user_payload(city="", province="", address="")
     assert_schema(request, "schema_input.json", StaticDataModules.professionals.name)
     response = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.professionals.value,

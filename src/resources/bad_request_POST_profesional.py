@@ -1,4 +1,3 @@
-import config
 
 register = [
     {"id": "DR-TC15", "item": "first_name"},

@@ -1,4 +1,3 @@
-import config
 
 id_invalid = [
     {"input":"letras", "item": "prof_id"},

@@ -22,3 +22,8 @@ def get_file_BIG():
     return {
         "photo": ("big.png", open(os.path.join(BASE_PATH, "big.png"), "rb"), "image/png")
     }
+
+def get_file_edit():
+    return {
+        "photo": ("profile_edit.png", open(os.path.join(BASE_PATH, "profile_edit.png"), "rb"), "image/png")
+    }

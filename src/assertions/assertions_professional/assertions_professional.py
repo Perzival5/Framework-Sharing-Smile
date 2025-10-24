@@ -174,3 +174,26 @@ def assert_professionals_list_format(response_data):
                 assert isinstance(value, bool), f"is_deleted no es booleano en item {idx}: {value}"
                 assert value is False, f"is_deleted debería ser False en item {idx}, recibido: {value}"
 
+#patch
+
+def assert_field_value_response(response_json, field, expected_value):
+
+    actual_value = response_json.get(field)
+
+    if field == "date_of_birth" and expected_value:
+        try:
+            expected_value = datetime.strptime(expected_value, "%d/%m/%Y").strftime("%Y-%m-%d")
+        except ValueError:
+            raise AssertionError(f"Formato inválido para expected_value en date_of_birth: {expected_value}")
+
+    assert actual_value == expected_value, (
+        f"El campo '{field}' no coincide. "
+        f"Esperado: {expected_value}, Recibido: {actual_value}"
+    )
+
+def assert_photo_response(response_json, old_value):
+    actual_value = response_json.get("photo_path")
+    assert actual_value != old_value, (
+        f"La foto no cambió. Se esperaba un valor distinto a '{old_value}', "
+        f"pero la API devolvió '{actual_value}'"
+    )
