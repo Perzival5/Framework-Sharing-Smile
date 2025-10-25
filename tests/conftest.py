@@ -31,3 +31,10 @@ def setup_professional(get_url):
     yield response.json()
     request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.professionals.value}{response.json()['id']}",
                                 header_type=StaticDataHeaders.header_delete_profesional.value)
+    
+@pytest.fixture(scope="function")
+def setup_create_professional(get_url):
+    request=build_user_payload()
+    response = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.professionals.value,
+                                header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_profile())
+    yield response.json()
