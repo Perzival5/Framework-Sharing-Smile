@@ -69,6 +69,7 @@ def test_Verificar_que_no_se_complete_el_registro_de_un_profesional_con_solo_car
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_profile())
     assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.parametrize("date", date_birth)
 def test_Verificar_que_no_se_complete_el_registre_un_profesional_con_date_of_birth_en_formato_invalido(get_url,date):
@@ -96,7 +97,7 @@ def test_Verificar_que_no_se_registre_un_profesional_con_date_of_birth_en_el_fut
     assert_response_validation_error_400_date_photo(response, StaticInputs.date_of_birth.value)
 
 @pytest.mark.parametrize("date", input_invalid)
-def test_Verificar_que_no_se_complete_el_registre_un_profesional_con_date_of_birth_en_formato_invalido(get_url,date):
+def test_Verificar_que_no_se_pueda_registrar_un_profesional_con_datos_en_formato_invalido(get_url,date):
     allure.dynamic.title(f"{date['id']}: Verificar que no se registre un profesional con {date['item']} inválido")
     request=build_user_payload(**{date['item']: date['input']})
     assert_schema(request, "schema_input.json", StaticDataModules.professionals.name)

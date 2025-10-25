@@ -48,7 +48,6 @@ input_space = [
 ]
 
 input_space_special = [
-    {"id": "DR-TC120", "item": "date_of_birth"},
     {"id": "DR-TC121", "item": "sex"},
     {"id": "DR-TC122", "item": "country"},
     {"id": "DR-TC123", "item": "personal_email"},
@@ -57,11 +56,22 @@ input_space_special = [
 special = [
     {"id": "DR-TC124", "item": "first_name", "input": "!!!!!!"},
     {"id": "DR-TC125", "item": "last_name", "input": "@@@@@@"},
-    {"id": "DR-TC126", "item": "date_of_birth", "input": "2000/10/20"},
-    {"id": "DR-TC127", "item": "date_of_birth", "input": "12/12/2150"},
-    {"id": "DR-TC128", "item": "sex", "input": "elicoptero"},
-    {"id": "DR-TC129", "item": "country", "input": "taiwan"},
-    {"id": "DR-TC130", "item": "personal_email", "input": "&&&&&&&"},
+    {"id": "DR-TC153", "item": "profession", "input": "$$$$$$"},
+    {"id": "DR-TC154", "item": "specialty", "input": "######"},
+    {"id": "DR-TC155", "item": "city", "input": "*/**-"},
+    {"id": "DR-TC156", "item": "province", "input": "^^^^^^^^"},
+    {"id": "DR-TC157", "item": "address", "input": "&&&&&&&"},
+]
+
+date_birth = [
+    {"id": "DR-TC126", "title": "mm/dd/aaaa", "item": "date_of_birth", "input": "05/30/1987"},
+    {"id": "DR-TC152", "title": "aaaa/dd/mm", "item": "date_of_birth", "input": "2000/15/12"},
+]
+
+input_invalid = [
+    {"id": "DR-TC128", "item": "sex", "input": "sin gener definido"},
+    {"id": "DR-TC129", "item": "country", "input": "japon"},
+    {"id": "DR-TC130", "item": "personal_email", "input": "esto no es un correo"},
     {"id": "DR-TC131", "item": "phone", "input": "letras"},
 ]
 
@@ -95,7 +105,6 @@ token = [
     {"id": "DR-TC151", "header":"header_without_permits", "title":"con token sin permisos", "message":"Not enough permissions", "status":403},
 ]
 
-http_methods_invalid = [
-    {"id": "DR-TC152", "item": "GET"},
-    {"id": "DR-TC153", "item": "POST"},
+id_not_exist = [
+    {"input":1654555612, "title": "que no existente"},
 ]

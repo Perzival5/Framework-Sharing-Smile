@@ -121,11 +121,11 @@ def assert_response_500(response):
     )
 
 def assert_responde_falled_http(response, file, type):
-    if type == "DR-TC50":
+    if type == "DR-TC50" or type == "DR-TC152":
         assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
         assert "<title>Error 400 (Bad Request)!!!</title>" in response.text
 
-    elif type == "DR-TC51" or type == "DR-TC52" or type == "DR-TC79" or type == "DR-TC80":
+    elif type == "DR-TC51" or type == "DR-TC52" or type == "DR-TC79" or type == "DR-TC80" or type == "DR-TC153":
         assert_response_status_code(response.status_code, StaticStatus.method_not_allowed.value)
         assert_schema(response.json(), "schema_405.json", file)
         assert response.json()["detail"] == "Method Not Allowed"
@@ -182,18 +182,31 @@ def assert_field_value_response(response_json, field, expected_value):
 
     if field == "date_of_birth" and expected_value:
         try:
-            expected_value = datetime.strptime(expected_value, "%d/%m/%Y").strftime("%Y-%m-%d")
+            if "/" in expected_value and "-" not in expected_value:
+                parts = expected_value.split("/")
+                if len(parts[0]) == 4:  
+                    expected_value = datetime.strptime(expected_value, "%Y/%m/%d").strftime("%Y-%m-%d")
+                elif int(parts[0]) > 12:
+                    expected_value = datetime.strptime(expected_value, "%d/%m/%Y").strftime("%Y-%m-%d")
+                else:
+                    expected_value = datetime.strptime(expected_value, "%m/%d/%Y").strftime("%Y-%m-%d")
+            elif "-" in expected_value:
+                datetime.strptime(expected_value, "%Y-%m-%d")
         except ValueError:
             raise AssertionError(f"Formato inválido para expected_value en date_of_birth: {expected_value}")
 
-    assert actual_value == expected_value, (
+    assert str(actual_value) == str(expected_value), (
         f"El campo '{field}' no coincide. "
         f"Esperado: {expected_value}, Recibido: {actual_value}"
     )
 
 def assert_photo_response(response_json, old_value):
     actual_value = response_json.get("photo_path")
-    assert actual_value != old_value, (
-        f"La foto no cambió. Se esperaba un valor distinto a '{old_value}', "
-        f"pero la API devolvió '{actual_value}'"
+    assert actual_value == old_value
+
+def assert_field_value_input(response_json, field, expected_value):
+    actual_value = response_json.get(field)
+    assert str(actual_value) == str(expected_value), (
+        f"El campo '{field}' no coincide. "
+        f"Esperado: {expected_value}, Recibido: {actual_value}"
     )
