@@ -1,0 +1,71 @@
+{
+    "type": "object",
+    "required": [
+        "address",
+        "city",
+        "country",
+        "date_of_birth",
+        "dni",
+        "first_name",
+        "id",
+        "is_deleted",
+        "last_name",
+        "personal_email",
+        "phone",
+        "photo_path",
+        "profession",
+        "province",
+        "sex",
+        "specialty"
+    ],
+    "properties": {
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "date_of_birth": {
+            "type": "string"
+        },
+        "sex": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "city": {
+            "type": ["string", "null"] 
+        },
+        "province": {
+            "type": ["string", "null"]
+        },
+        "address": {
+            "type": ["string", "null"]
+        },
+        "dni": {
+            "type": "string"
+        },
+        "personal_email": {
+            "type": "string"
+        },
+        "phone": {
+            "type": "string"
+        },
+        "profession": {
+            "type": "string"
+        },
+        "specialty": {
+            "type": "string"
+        },
+        "photo_path": {
+            "type": "string"
+        },
+        "id": {
+            "type": "integer"
+        },
+        "is_deleted": {
+            "type": "boolean"
+        }
+    }
+}
