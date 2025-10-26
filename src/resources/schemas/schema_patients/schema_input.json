@@ -1,0 +1,63 @@
+{
+    "type": "object",
+    "required": [
+        "address",
+        "city",
+        "country",
+        "date_of_birth",
+        "dni",
+        "father_name",
+        "first_name",
+        "fissure_type",
+        "last_name",
+        "mother_name",
+        "province",
+        "ref_number_1",
+        "ref_number_2",
+        "sex"
+    ],
+    "properties": {
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "date_of_birth": {
+            "type": "string"
+        },
+        "sex": {
+            "type": "string"
+        },
+        "country": {
+            "type": "string"
+        },
+        "city": {
+            "type": "string"
+        },
+        "province": {
+            "type": "string"
+        },
+        "address": {
+            "type": "string"
+        },
+        "dni": {
+            "type": "string"
+        },
+        "father_name": {
+            "type": "string"
+        },
+        "mother_name": {
+            "type": "string"
+        },
+        "ref_number_1": {
+            "type": "string"
+        },
+        "ref_number_2": {
+            "type": "string"
+        },
+        "fissure_type": {
+            "type": "string"
+        }
+    }
+}

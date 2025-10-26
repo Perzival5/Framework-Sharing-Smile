@@ -11,7 +11,7 @@ from src.common.static_inputs import StaticInputs
 from src.utils.payload_builders_professionals import build_user_payload
 from src.utils.api_calls import request_function
 from src.resources.files import *
-from src.resources.request_POST_profesional import register, special, date_birth, input_invalid, input_large, input_large_special_pro, token, http_methods_invalid, duplicate, valid_sex, valid_country
+from src.resources.request_POST_profesional import *
 
 def test_Verificar_registro_de_profesional_con_todos_los_campos_válidos(get_url,teardown_professional):
     allure.dynamic.title("DR-TC13: Verificar registro de profesional con todos los campos válidos")

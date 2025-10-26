@@ -1,0 +1,78 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "first_name": {
+                "type": "string"
+            },
+            "last_name": {
+                "type": "string"
+            },
+            "date_of_birth": {
+                "type": "string"
+            },
+            "sex": {
+                "type": "string"
+            },
+            "country": {
+                "type": "string"
+            },
+            "city": {
+                "type": ["string", "null"] 
+            },
+            "province": {
+                "type": ["string", "null"] 
+            },
+            "address": {
+                "type": ["string", "null"] 
+            },
+            "dni": {
+                "type": "string"
+            },
+            "father_name": {
+                "type": "string"
+            },
+            "mother_name": {
+                "type": "string"
+            },
+            "ref_number_1": {
+                "type": "string"
+            },
+            "ref_number_2": {
+                "type": ["string", "null"] 
+            },
+            "fissure_type": {
+                "type": "string"
+            },
+            "photo_path": {
+                "type": "string"
+            },
+            "id": {
+                "type": "integer"
+            },
+            "is_deleted": {
+                "type": "boolean"
+            }
+        },
+        "required": [
+            "address",
+            "city",
+            "country",
+            "date_of_birth",
+            "dni",
+            "father_name",
+            "first_name",
+            "fissure_type",
+            "id",
+            "is_deleted",
+            "last_name",
+            "mother_name",
+            "photo_path",
+            "province",
+            "ref_number_1",
+            "ref_number_2",
+            "sex"
+        ]
+    }
+}
