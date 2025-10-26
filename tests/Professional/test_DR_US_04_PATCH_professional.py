@@ -11,7 +11,7 @@ from src.common.static_inputs import StaticInputs
 from src.utils.payload_builders_professionals import *
 from src.utils.api_calls import request_function
 from src.resources.files import *
-from src.resources.request_PATCH_profesional import input_patch, input_sex_country, input_patch_void, input_space, input_space_special, special, date_birth, input_invalid, input_large, input_large_special_pro, duplicate, token, id_not_exist
+from src.resources.request_PATCH_profesional import *
 
 def test_Verificar_actualizar_datos_de_un_profesional_con_todos_los_campos_válidos(get_url,setup_professional):
     allure.dynamic.title("DR-TC81: Verificar actualización de datos de un profesional con todos los campos válidos")

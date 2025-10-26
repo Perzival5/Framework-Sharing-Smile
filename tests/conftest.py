@@ -60,3 +60,12 @@ def setup_create_patient(get_url):
     response = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.patients.value,
                                 header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_profile())
     yield response.json()
+
+@pytest.fixture(scope="function")
+def setup_patient(get_url):
+    request=build_patient_payload()
+    response = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.patients.value,
+                                header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_profile())
+    yield response.json()
+    request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.patients.value}{response.json()['id']}",
+                                header_type=StaticDataHeaders.header_delete_patient.value)

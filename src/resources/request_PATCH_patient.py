@@ -14,7 +14,7 @@ input_patch = [
     {"id": "DR-TC246", "item": "fissure_type"},
 ]
 
-input_sex_country = [
+input_sex_country_fissure_type = [
     {"id": "DR-TC248", "item": "sex", "title": "sex masculino", "input":"masculino"},
     {"id": "DR-TC249", "item": "sex", "title": "sex femenino", "input":"femenino"},
     {"id": "DR-TC250", "item": "country", "title": "country Bolivia", "input" : "BO",},
@@ -81,8 +81,8 @@ input_invalid = [
 input_large = [
     {"id": "DR-TC295", "item": "first_name", "input": "FernandezSantosPerezAlejandroMaximilianoGonzalez"},
     {"id": "DR-TC296", "item": "last_name", "input": "CampoGutierrezLopezRodriguezMartinezFernandezDel"},
-    {"id": "DR-TC297", "item": "father_name", "input": "LeonelMamaniMaximilianoGonzalezFernandezSantosPerez"},
-    {"id": "DR-TC298", "item": "mother_name", "input": "ChoqueCasaMartinezFernandezDelCampoGutierrezLopez"},
+    {"id": "DR-TC297", "item": "father_name", "input": "LeonelMamaniMaximilianoGonzalezFernandezSantosPerezChoqueCasaMartinezFernandezDelCampoGutierrezLopez"},
+    {"id": "DR-TC298", "item": "mother_name", "input": "ChoqueCasaMartinezFernandezDelCampoGutierrezLopezLeonelMamaniMaximilianoGonzalezFernandezSantosPerez"},
     {"id": "DR-TC301", "item": "dni", "input": "90165412345678"},
     {"id": "DR-TC302", "item": "ref_number_1", "input": "1230911789654"},
     {"id": "DR-TC303", "item": "ref_number_2", "input": "1230911789654"},
@@ -91,7 +91,7 @@ input_large = [
     {"id": "DR-TC307", "item": "address", "input": "Av.BlancoGalindoKM41/2Nro4567ZonaCentralEdificioLibertadPiso8DepartamentoBReferenciaPlazaColonFrenteABancoUnion"},
 ]
 
-input_large_special_pro = [
+input_large_special_pa = [
     {"id": "DR-TC299", "item": "sex", "input": "masculinofemeninootro"},
     {"id": "DR-TC300", "item": "country", "input": "chinatown"},
     {"id": "DR-TC304", "item": "fissure_type", "input": "CaracteristicaExtendidaDePruebaParaVerificarExcesoDeLongitudPermitidaEnElCampoFeatureTypeDelProfesionalSistemaQA"},
