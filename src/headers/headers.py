@@ -9,11 +9,15 @@ def generate_headers(header_type):
         case "header_professional":
             return header_professional()
         case "header_delete_profesional":
-            return header_professional()
+            return header_delete_profesional()
         case "header_without_permits":
             return header_without_permits()
         case "header_token_invalid":
             return header_token_invalid()
+        case "header_patient":
+            return header_patient()
+        case "header_delete_patient":
+            return header_delete_patient()
        
 
 def get_header_login():

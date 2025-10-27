@@ -1,0 +1,23 @@
+{
+    "type": "object",
+    "required": [
+        "created_at",
+        "filename",
+        "id",
+        "url"
+    ],
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "url": {
+            "type": "string"
+        },
+        "filename": {
+            "type": "string"
+        },
+        "created_at": {
+            "type": "string"
+        }
+    }
+}

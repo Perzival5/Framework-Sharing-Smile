@@ -15,11 +15,11 @@ register = [
 special = [
     {"id": "DR-TC26", "item": "first_name", "input": "!!!!!!"},
     {"id": "DR-TC27", "item": "last_name", "input": "@@@@@@"},
-    {"id": "DR-TC56", "item": "date_of_birth", "input": "######"},
-    {"id": "DR-TC57", "item": "sex", "input": "$$$$$$"},
-    {"id": "DR-TC58", "item": "country", "input": "%"},
-    {"id": "DR-TC59", "item": "dni", "input": "^^^^^^^^"},
-    {"id": "DR-TC60", "item": "personal_email", "input": "&&&&&&&"},
+    {"id": "DR-TC56", "item": "profession", "input": "######"},
+    {"id": "DR-TC57", "item": "specialty", "input": "$$$$$$"},
+    {"id": "DR-TC58", "item": "city", "input": "%"},
+    {"id": "DR-TC59", "item": "province", "input": "^^^^^^^^"},
+    {"id": "DR-TC60", "item": "address", "input": "&&&&&&&"},
 ]
 
 date_birth = [

@@ -6,4 +6,5 @@ class StaticInputs(Enum):
     photo = "Only PNG or JPEG images are allowed"
     id="1"
     professional_not_found = "Professional not found"
+    patient_not_found = "Patient not found"
     
