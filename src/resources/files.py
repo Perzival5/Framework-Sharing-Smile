@@ -27,3 +27,14 @@ def get_file_edit():
     return {
         "photo": ("profile_edit.png", open(os.path.join(BASE_PATH, "profile_edit.png"), "rb"), "image/png")
     }
+
+#photo
+def get_file_patient_photo():
+    return {
+        "file": ("patient.png", open(os.path.join(BASE_PATH, "patient.png"), "rb"), "image/png")
+    }
+
+def get_file_txt_photo():
+    return {
+        "file": ("imagen.txt", open(os.path.join(BASE_PATH, "imagen.txt"), "rb"), "text/plain")
+    }

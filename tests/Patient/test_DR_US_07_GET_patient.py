@@ -11,7 +11,6 @@ from src.common.static_inputs import StaticInputs
 from src.utils.api_calls import request_function
 from src.resources.request_GET_patient import *
 
-
 def test_Verificar_obtencion_de_lista_de_pacientes(get_url):
     allure.dynamic.title("DR-TC226: Verificar obtención de lista de pacientes")
     response = request_function(StaticDataVerbs.get.value, get_url, StaticDataModules.patients.value,

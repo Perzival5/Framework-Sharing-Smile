@@ -126,11 +126,11 @@ def assert_response_500(response):
     )
 
 def assert_responde_falled_http(response, file, type):
-    if type == "DR-TC220" or type == "DR-TC152":
+    if type == "DR-TC220":
         assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
         assert "<title>Error 400 (Bad Request)!!1</title>" in response.text
 
-    elif type == "DR-TC221" or type == "DR-TC222" or type == "DR-TC232" or type == "DR-TC233" or type == "DR-TC153":
+    elif type == "DR-TC221" or type == "DR-TC222" or type == "DR-TC232" or type == "DR-TC233":
         assert_response_status_code(response.status_code, StaticStatus.method_not_allowed.value)
         assert_schema(response.json(), "schema_405.json", file)
         assert response.json()["detail"] == "Method Not Allowed"
@@ -210,3 +210,22 @@ def assert_field_value_input(response_json, field, expected_value):
         f"El campo '{field}' no coincide. "
         f"Esperado: {expected_value}, Recibido: {actual_value}"
     )
+
+#photo
+def assert_response_photo(response_json, expected_value):
+    actual_value = response_json.json()["id"]
+    assert str(actual_value) == str(expected_value), (
+        f"El id no coincide."
+        f"Esperado: {expected_value}, Recibido: {actual_value}"
+    )
+
+def assert_response_photo_id(response):
+    expected = {
+        "id": 1,
+        "url": "https://i.ibb.co/DDZmmxj6/7762183001d7.jpg",
+        "filename": "ddf5736f3b364ae5ae247e68b57caee0.jpeg",
+        "created_at": "2025-10-27T01:03:49"
+    }
+    data = response.json()[0] 
+    assert data == expected
+
