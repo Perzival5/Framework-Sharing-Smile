@@ -1,0 +1,27 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Matthew', 'last_name': 'Carrillo', 'date_of_birth': '20/05/2022', 'sex': 'femenino', 'country': 'AR', 'dni': '95356830', 'father_name': 'Travis', 'mother_name': 'Kaitlyn', 'fissure_type': 'Flap der', 'ref_number_1': '28055813', 'ref_number_2': '84747093', 'city': 'East Angela', 'province': 'Pennsylvania', 'address': 'PSC 8303, Box 9373\nAPO AP 11085'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:00
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'a696bfce945f498d633c43ca58625bd9', 'date': 'Thu, 30 Oct 2025 21:16:00 GMT', 'server': 'Google Frontend', 'Content-Length': '469', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Matthew', 'last_name': 'Carrillo', 'date_of_birth': '2022-05-20', 'sex': 'femenino', 'country': 'AR', 'city': 'East Angela', 'province': 'Pennsylvania', 'address': 'PSC 8303, Box 9373\nAPO AP 11085', 'dni': '95356830', 'father_name': 'Travis', 'mother_name': 'Kaitlyn', 'ref_number_1': '28055813', 'ref_number_2': '84747093', 'fissure_type': 'Flap der', 'email': None, 'phone': None, 'photo_path': 'file:///code/uploads/bfee0f37dddd4526939f415a7303706a.png', 'id': 842, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/842
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': ''}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:00
+INFO     api_logger:logger.py:44 Status code: 200
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '970d3ecaa6959a2c08b0aa4485d1be5d', 'date': 'Thu, 30 Oct 2025 21:16:00 GMT', 'server': 'Google Frontend', 'Content-Length': '469', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Matthew', 'last_name': 'Carrillo', 'date_of_birth': '2022-05-20', 'sex': 'femenino', 'country': 'AR', 'city': 'East Angela', 'province': 'Pennsylvania', 'address': 'PSC 8303, Box 9373\nAPO AP 11085', 'dni': '95356830', 'father_name': 'Travis', 'mother_name': 'Kaitlyn', 'ref_number_1': '28055813', 'ref_number_2': '84747093', 'fissure_type': 'Flap der', 'email': None, 'phone': None, 'photo_path': 'file:///code/uploads/bfee0f37dddd4526939f415a7303706a.png', 'id': 842, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/842
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:00
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '210eb80c46a0c8b8d58ca2b3b0b98ed3', 'date': 'Thu, 30 Oct 2025 21:16:00 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

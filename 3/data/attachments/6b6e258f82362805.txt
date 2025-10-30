@@ -1,0 +1,27 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Laura', 'last_name': 'Hughes', 'date_of_birth': '31/12/2015', 'sex': 'femenino', 'country': 'AR', 'dni': '41559458', 'father_name': 'Robert', 'mother_name': 'Kendra', 'fissure_type': 'Flap izq', 'ref_number_1': '26830074', 'ref_number_2': '52168189', 'city': 'New Jessicaburgh', 'province': 'Connecticut', 'address': '11566 Jennifer Loaf\nJohnsonchester, VT 84956'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:15
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '080176a6cec7f413645ae6675f27bff1', 'date': 'Thu, 30 Oct 2025 21:16:15 GMT', 'server': 'Google Frontend', 'Content-Length': '481', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Laura', 'last_name': 'Hughes', 'date_of_birth': '2015-12-31', 'sex': 'femenino', 'country': 'AR', 'city': 'New Jessicaburgh', 'province': 'Connecticut', 'address': '11566 Jennifer Loaf\nJohnsonchester, VT 84956', 'dni': '41559458', 'father_name': 'Robert', 'mother_name': 'Kendra', 'ref_number_1': '26830074', 'ref_number_2': '52168189', 'fissure_type': 'Flap izq', 'email': None, 'phone': None, 'photo_path': 'file:///code/uploads/aa1e9e6e9efa4175b23dbb960abe817c.png', 'id': 852, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/852
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:16
+INFO     api_logger:logger.py:44 Status code: 200
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '3778abf71cd01c593ddc44af294e9ac2', 'date': 'Thu, 30 Oct 2025 21:16:16 GMT', 'server': 'Google Frontend', 'Content-Length': '481', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Laura', 'last_name': 'Hughes', 'date_of_birth': '2015-12-31', 'sex': 'femenino', 'country': 'AR', 'city': 'New Jessicaburgh', 'province': 'Connecticut', 'address': '11566 Jennifer Loaf\nJohnsonchester, VT 84956', 'dni': '41559458', 'father_name': 'Robert', 'mother_name': 'Kendra', 'ref_number_1': '26830074', 'ref_number_2': '52168189', 'fissure_type': 'Flap izq', 'email': None, 'phone': None, 'photo_path': 'file:///code/uploads/aa1e9e6e9efa4175b23dbb960abe817c.png', 'id': 852, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/852
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:16
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '2bbefb410d69f2258e9657d25d6545bc', 'date': 'Thu, 30 Oct 2025 21:16:16 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

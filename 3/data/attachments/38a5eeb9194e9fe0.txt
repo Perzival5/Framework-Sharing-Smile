@@ -1,0 +1,27 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Kathryn', 'last_name': 'Wood', 'date_of_birth': '14/09/2011', 'sex': 'femenino', 'country': 'US', 'dni': '88982708', 'father_name': 'Edward', 'mother_name': 'Kaitlin', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '42795007', 'ref_number_2': '43372778', 'city': 'Tylertown', 'province': 'Idaho', 'address': '811 Mary Lights\nNorth Cathy, FM 63054'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:28
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'a650943b82f08e15dacdbf88ab0c167c', 'date': 'Thu, 30 Oct 2025 21:16:28 GMT', 'server': 'Google Frontend', 'Content-Length': '468', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Kathryn', 'last_name': 'Wood', 'date_of_birth': '2011-09-14', 'sex': 'femenino', 'country': 'US', 'city': 'Tylertown', 'province': 'Idaho', 'address': '811 Mary Lights\nNorth Cathy, FM 63054', 'dni': '88982708', 'father_name': 'Edward', 'mother_name': 'Kaitlin', 'ref_number_1': '42795007', 'ref_number_2': '43372778', 'fissure_type': 'Flap Bilateral', 'email': None, 'phone': None, 'photo_path': 'file:///code/uploads/26f152c89af74b1fb276daf463d7f035.png', 'id': 861, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/861
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'country': ' '}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:28
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '07f707f00796ed05ac6487a0139109e4', 'date': 'Thu, 30 Oct 2025 21:16:28 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/861
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:16:28
+INFO     api_logger:logger.py:44 Status code: 404
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'bf374c7799484f4822b2827962dc4bf9', 'date': 'Thu, 30 Oct 2025 21:16:28 GMT', 'server': 'Google Frontend', 'Content-Length': '30', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Patient not found'}

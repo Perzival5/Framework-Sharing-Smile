@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': '', 'last_name': 'Hall', 'date_of_birth': '14/06/2009', 'sex': 'masculino', 'country': 'AR', 'dni': '50152194', 'father_name': 'Frank', 'mother_name': 'Courtney', 'fissure_type': 'Flap izq', 'ref_number_1': '24903553', 'ref_number_2': '25406906', 'city': 'Tateport', 'province': 'Texas', 'address': '534 Lisa Cliff Apt. 640\nWest Katherine, WA 10862'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:19
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'ddc8fcf153a7b63d525c09e0183c3cb1;o=1', 'date': 'Thu, 30 Oct 2025 21:14:19 GMT', 'server': 'Google Frontend', 'Content-Length': '145', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'first_name'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

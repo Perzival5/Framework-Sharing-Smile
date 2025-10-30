@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Lindsay', 'last_name': 'Schmidt', 'date_of_birth': '24/10/2010', 'sex': 'indefinido', 'country': 'PE', 'dni': '22344943', 'father_name': 'Billy', 'mother_name': 'Ashley', 'fissure_type': 'Flap der', 'ref_number_1': '57569116', 'ref_number_2': '73900924', 'city': 'West Craig', 'province': 'Nevada', 'address': 'USCGC Tran\nFPO AP 95565'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:52
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '54b5c545b1a4f21810bcd18c99db61fd;o=1', 'date': 'Thu, 30 Oct 2025 21:14:52 GMT', 'server': 'Google Frontend', 'Content-Length': '250', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\nsex\n  Value error, sex must be 'Masculino' or 'Femenino' [type=value_error, input_value='indefinido', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

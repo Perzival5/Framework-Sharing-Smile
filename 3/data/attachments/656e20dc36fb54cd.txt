@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: PUT
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json'}
+DEBUG    api_logger:logger.py:32 Request payload: {'username': 'david.rodriguez@project-x.com', 'password': 'admin'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:13
+INFO     api_logger:logger.py:44 Status code: 405
+DEBUG    api_logger:logger.py:48 Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': '19e752a592d51e1eb76a5bcf014243cb', 'date': 'Thu, 30 Oct 2025 21:14:12 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Method Not Allowed'}

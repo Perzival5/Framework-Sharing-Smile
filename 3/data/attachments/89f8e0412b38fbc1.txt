@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Elizabeth', 'last_name': 'Simmons', 'date_of_birth': '1997/15/12', 'sex': 'masculino', 'country': 'BR', 'dni': '66508419', 'father_name': 'Alfred', 'mother_name': 'Tara', 'fissure_type': 'Flap der', 'ref_number_1': '30590447', 'ref_number_2': '44237498', 'city': 'North Lance', 'province': 'Florida', 'address': '4295 Taylor Radial Apt. 512\nLake Jenniferland, CA 81244'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:55
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'fabe8eea6370d290660c52c98e1fc240', 'date': 'Thu, 30 Oct 2025 21:14:55 GMT', 'server': 'Google Frontend', 'Content-Length': '45', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'date_of_birth must be dd/mm/yyyy'}

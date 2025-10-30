@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Cynthia', 'last_name': 'Weaver', 'date_of_birth': '09/05/2017', 'sex': 'femenino', 'country': 'US', 'dni': '55560060', 'father_name': 'Kelly', 'mother_name': 'Elizabeth', 'fissure_type': 'Flap izq', 'ref_number_1': '67890907', 'ref_number_2': '96255863', 'city': 'West Julia', 'province': 'ChapareTropicalRegionNorteExtensaMontañosaCasa', 'address': '34463 Joseph Crescent Suite 117\nJohnchester, WV 23447'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:15:12
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '66a91174a7a86d6d05c2bca1efc04f91', 'date': 'Thu, 30 Oct 2025 21:15:12 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

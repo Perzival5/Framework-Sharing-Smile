@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: PUT
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Ernest', 'last_name': 'Logan', 'date_of_birth': '17/05/2015', 'sex': 'femenino', 'country': 'PE', 'dni': '52504760', 'father_name': 'Robert', 'mother_name': 'Molly', 'fissure_type': 'Flap izq', 'ref_number_1': '48804023', 'ref_number_2': '85321467', 'city': 'Gonzalesstad', 'province': 'South Carolina', 'address': '38749 Shannon Cliffs Apt. 415\nPaulview, OR 45548'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:15:21
+INFO     api_logger:logger.py:44 Status code: 405
+DEBUG    api_logger:logger.py:48 Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': '5807ba8b4ca1ed247bab3dac7084f95a', 'date': 'Thu, 30 Oct 2025 21:15:21 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Method Not Allowed'}

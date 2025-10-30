@@ -1,0 +1,27 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyNDYyMDkwLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.p9BE5tetcx5Wq-bkho3IfkBTYNv2EbFebdmMeHKXSaA'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'John', 'last_name': 'Contreras', 'date_of_birth': '21/07/1970', 'sex': 'masculino', 'country': 'AR', 'dni': '86615561', 'personal_email': 'lauren53@example.net', 'phone': '26061288', 'profession': 'Midwife', 'specialty': 'per', 'city': 'Keithmouth', 'province': 'Alabama', 'address': '7136 Tammy Islands Apt. 827\nSouth Jenniferborough, VA 67228'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:19:59
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'a6f6941609d66fb340787c4d050ac6bf', 'date': 'Thu, 30 Oct 2025 21:19:59 GMT', 'server': 'Google Frontend', 'Content-Length': '440', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'John', 'last_name': 'Contreras', 'date_of_birth': '1970-07-21', 'sex': 'masculino', 'country': 'AR', 'city': 'Keithmouth', 'province': 'Alabama', 'address': '7136 Tammy Islands Apt. 827\nSouth Jenniferborough, VA 67228', 'dni': '86615561', 'personal_email': 'lauren53@example.net', 'phone': '26061288', 'profession': 'Midwife', 'specialty': 'per', 'photo_path': 'file:///code/uploads/efbe5da3004a4746be3bb3ec5088fefd.png', 'id': 1138, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1138
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer dasvasbrbebwebwbweb'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Jacob', 'last_name': 'Hill', 'date_of_birth': '12/04/1997', 'sex': 'femenino', 'country': 'PE', 'dni': '48562206', 'personal_email': 'simspriscilla@example.net', 'phone': '40846633', 'profession': 'Insurance broker', 'specialty': 'lawyer', 'city': 'Henryfort', 'province': 'Utah', 'address': '28269 Hicks Motorway Apt. 948\nLake Ralph, SC 58668'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:19:59
+INFO     api_logger:logger.py:44 Status code: 401
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '1d53ddae33d5ba9f912c9cad2e52f16f', 'date': 'Thu, 30 Oct 2025 21:19:59 GMT', 'server': 'Google Frontend', 'Content-Length': '26', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Invalid token'}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1138
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyNDYyMDkwLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.p9BE5tetcx5Wq-bkho3IfkBTYNv2EbFebdmMeHKXSaA'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:19:59
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'f313100fec8efd49c1c5cdfd972e4fa2', 'date': 'Thu, 30 Oct 2025 21:19:59 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

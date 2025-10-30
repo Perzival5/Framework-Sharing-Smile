@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Erin', 'last_name': 'Perez', 'date_of_birth': '19/06/2022', 'sex': 'femenino', 'country': 'BR', 'dni': '46061015', 'father_name': 'Daniel', 'mother_name': 'Mary', 'fissure_type': 'Flap der', 'ref_number_1': '16530223', 'ref_number_2': '80403926', 'city': 'CochabambaMetropolitanaZonaCentroIndustrialSur', 'province': 'New Jersey', 'address': '32184 Jensen Garden\nSouth Jonathan, PA 57744'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:15:10
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '930f02c8f06f785f07ec77e1443f3df4', 'date': 'Thu, 30 Oct 2025 21:15:10 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

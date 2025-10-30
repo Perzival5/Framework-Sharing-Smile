@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/1654555612
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Joel', 'last_name': 'Nicholson', 'date_of_birth': '04/09/2016', 'sex': 'masculino', 'country': 'AR', 'dni': '71302191', 'father_name': 'James', 'mother_name': 'Stephanie', 'fissure_type': 'Flap der', 'ref_number_1': '90079449', 'ref_number_2': '97463022', 'city': 'Port Julia', 'province': 'West Virginia', 'address': '933 Matthew Causeway\nNew Paulstad, MI 27332'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:17:15
+INFO     api_logger:logger.py:44 Status code: 404
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '1934c379b26ef770f8f78ae8cfe5e8af', 'date': 'Thu, 30 Oct 2025 21:17:15 GMT', 'server': 'Google Frontend', 'Content-Length': '30', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Patient not found'}

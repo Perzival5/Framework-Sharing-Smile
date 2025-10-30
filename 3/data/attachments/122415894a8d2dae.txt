@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Michael', 'last_name': 'Beltran', 'date_of_birth': '27/02/2016', 'sex': 'masculinofemeninootro', 'country': 'BO', 'dni': '44699774', 'father_name': 'Tyler', 'mother_name': 'Carolyn', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '38801129', 'ref_number_2': '80276341', 'city': 'Lake Tarabury', 'province': 'Wisconsin', 'address': '0428 Jamie Mews Apt. 619\nKarlahaven, RI 17520'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:15:16
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '5091f274510b50e2832930febaea0325', 'date': 'Thu, 30 Oct 2025 21:15:16 GMT', 'server': 'Google Frontend', 'Content-Length': '261', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\nsex\n  Value error, sex must be 'Masculino' or 'Femenino' [type=value_error, input_value='masculinofemeninootro', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

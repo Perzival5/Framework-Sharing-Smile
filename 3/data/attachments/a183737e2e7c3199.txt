@@ -1,0 +1,18 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Bethany', 'last_name': 'Rose', 'date_of_birth': '10/01/2013', 'sex': 'masculino', 'country': 'MX', 'dni': '76229214', 'father_name': 'Timothy', 'mother_name': 'Pamela', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '33161163', 'ref_number_2': '87647243', 'city': 'Craigmouth', 'province': 'Vermont', 'address': '6114 Fernandez Knolls Apt. 596\nEast Jose, VA 99732'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:34
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'd98f2ed0b704f4d73cbdf271db1859ff', 'date': 'Thu, 30 Oct 2025 21:14:34 GMT', 'server': 'Google Frontend', 'Content-Length': '485', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Bethany', 'last_name': 'Rose', 'date_of_birth': '2013-01-10', 'sex': 'masculino', 'country': 'MX', 'city': 'Craigmouth', 'province': 'Vermont', 'address': '6114 Fernandez Knolls Apt. 596\nEast Jose, VA 99732', 'dni': '76229214', 'father_name': 'Timothy', 'mother_name': 'Pamela', 'ref_number_1': '33161163', 'ref_number_2': '87647243', 'fissure_type': 'Flap Bilateral', 'email': None, 'phone': None, 'photo_path': 'file:///code/uploads/97f287c91aa44c2fa87fb1a6e7749786.png', 'id': 810, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/810
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:34
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'e7ed2384d97d5e1cd20efb849ea34bad', 'date': 'Thu, 30 Oct 2025 21:14:34 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

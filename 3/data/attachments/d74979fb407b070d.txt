@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Taylor', 'last_name': 'Noble', 'date_of_birth': '08/07/2012', 'sex': 'masculino', 'country': 'BO', 'dni': '97624379', 'father_name': 'David', 'mother_name': 'ChoqueCasaMartinezFernandezDelCampoGutierrezLopezLeonelMamaniMaximilianoGonzalezFernandezSantosPerezChoque', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '68370848', 'ref_number_2': '91365640', 'city': 'North William', 'province': 'Maryland', 'address': '71981 Gregory Islands\nShellyfurt, AZ 96995'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:15:03
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': 'c87e16f4881c1b9e5dc05cb111336b70;o=1', 'date': 'Thu, 30 Oct 2025 21:15:03 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

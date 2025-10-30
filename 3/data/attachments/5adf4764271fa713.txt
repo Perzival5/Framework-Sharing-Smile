@@ -1,0 +1,18 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyNDYyMDkwLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.p9BE5tetcx5Wq-bkho3IfkBTYNv2EbFebdmMeHKXSaA'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Michael', 'last_name': 'Carson', 'date_of_birth': '31/03/1993', 'sex': 'masculino', 'country': 'MX', 'dni': '11403527', 'personal_email': 'monicaobrien@example.net', 'phone': '31365871', 'profession': 'Stage manager', 'specialty': 'few', 'city': 'South Kellyborough', 'province': 'Arkansas', 'address': '5008 David Shoal Suite 740\nJohnville, PR 11849'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:19:54
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '155f254d3b9923ce14be1d7c00b6f22d', 'date': 'Thu, 30 Oct 2025 21:19:54 GMT', 'server': 'Google Frontend', 'Content-Length': '446', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Michael', 'last_name': 'Carson', 'date_of_birth': '1993-03-31', 'sex': 'masculino', 'country': 'MX', 'city': 'South Kellyborough', 'province': 'Arkansas', 'address': '5008 David Shoal Suite 740\nJohnville, PR 11849', 'dni': '11403527', 'personal_email': 'monicaobrien@example.net', 'phone': '31365871', 'profession': 'Stage manager', 'specialty': 'few', 'photo_path': 'file:///code/uploads/6a731671046a467f95b81441eb25078f.png', 'id': 1135, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1135
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyNDYyMDkwLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.p9BE5tetcx5Wq-bkho3IfkBTYNv2EbFebdmMeHKXSaA'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:19:55
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '6de013d291c18dc32667b20e0ad43f1b', 'date': 'Thu, 30 Oct 2025 21:19:54 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

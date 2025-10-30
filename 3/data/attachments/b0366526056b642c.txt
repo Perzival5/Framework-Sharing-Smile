@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Kendra', 'last_name': 'Waller', 'date_of_birth': '23/10/2009', 'sex': 'femenino', 'country': 'BR', 'dni': '81088380', 'father_name': 'George', 'mother_name': '', 'fissure_type': 'Flap der', 'ref_number_1': '13773114', 'ref_number_2': '28803282', 'city': 'Sheaport', 'province': 'Vermont', 'address': 'Unit 5479 Box 0772\nDPO AA 58661'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:22
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'c83c6f76d95e861617f79c39736d5a64', 'date': 'Thu, 30 Oct 2025 21:14:22 GMT', 'server': 'Google Frontend', 'Content-Length': '146', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'mother_name'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}
