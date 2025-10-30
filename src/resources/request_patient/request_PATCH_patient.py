@@ -106,7 +106,7 @@ id_not_exist = [
 ]
 
 id_invalid = [
-    {"input":"purasletras", "item": "prof_id"},
+    {"input":"purasletras", "item": "patient_id"},
 ]
 
 token = [

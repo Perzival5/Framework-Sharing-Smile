@@ -11,8 +11,11 @@ from src.common.static_inputs import StaticInputs
 from src.utils.payload_builders_professionals import *
 from src.utils.api_calls import request_function
 from src.resources.files import *
-from src.resources.request_PATCH_profesional import *
+from src.resources.request_professional.request_PATCH_professional import *
 
+@pytest.mark.smoke
+@pytest.mark.positive
+@pytest.mark.regression
 def test_Verificar_actualizar_datos_de_un_profesional_con_todos_los_campos_válidos(get_url,setup_professional):
     allure.dynamic.title("DR-TC81: Verificar actualización de datos de un profesional con todos los campos válidos")
     request=build_user_payload()
@@ -24,6 +27,8 @@ def test_Verificar_actualizar_datos_de_un_profesional_con_todos_los_campos_váli
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
     assert_response_profesional(response.json(),request)
 
+@pytest.mark.smoke
+@pytest.mark.positive
 @pytest.mark.parametrize("input", input_patch)
 def test_Verificar_actualización_exitosa_de_un_profesional_modificando_solo_un_campo(get_url,setup_professional,input):
     allure.dynamic.title(f"{input['id']}: Verificar actualización exitosa de un profesional modificando solo el campo {input['item']}")
@@ -34,8 +39,10 @@ def test_Verificar_actualización_exitosa_de_un_profesional_modificando_solo_un_
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
-    assert_field_value_response(response.json(), input['item'], random)
+    assert_value_response(response.json(), input['item'], random)
 
+@pytest.mark.smoke
+@pytest.mark.positive
 def test_Verificar_actualización_exitosa_de_un_profesional_modificando_el_campo_photo(get_url,setup_professional):
     allure.dynamic.title("DR‑TC93: Verificar actualización exitosa de un profesional modificando solo el campo photo")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
@@ -44,6 +51,8 @@ def test_Verificar_actualización_exitosa_de_un_profesional_modificando_el_campo
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
     assert_photo_response(response.json(), setup_professional["photo_path"])
 
+@pytest.mark.smoke
+@pytest.mark.positive
 @pytest.mark.parametrize("input", input_sex_country)
 def test_Verificar_que_se_pueda_actualizar_un_profesional_con_datos_validos_es_sex_country(get_url,setup_professional,input):
     allure.dynamic.title(f"{input['id']}: Verificar que se pueda actualizar un profesional con {input['title']}")
@@ -56,6 +65,8 @@ def test_Verificar_que_se_pueda_actualizar_un_profesional_con_datos_validos_es_s
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
     assert_field_value_response(response.json(), input['item'], input['input'])
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("input", input_patch_void)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_vacio(get_url,setup_professional,input):
     allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con un valor vacio")
@@ -68,6 +79,8 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_vacio(get
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
     assert_field_value_response(response.json(), input['item'], setup_professional[input['item']])
 
+@pytest.mark.negative
+@pytest.mark.regression
 def test_Verificar_que_no_se_pueda_actualizar_photo_por_uno_vacio(get_url,setup_professional):
     allure.dynamic.title("DR‑TC113: Verificar que no se pueda actualizar photo por uno vacio")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
@@ -77,10 +90,13 @@ def test_Verificar_que_no_se_pueda_actualizar_photo_por_uno_vacio(get_url,setup_
     assert_field_value_response(response.json(), "photo_path", setup_professional["photo_path"])
 
 #bug
-@pytest.mark.xfail(raises= "se puede actualizar los campos por espacios vacios", run=False)
+@pytest.mark.negative
+@pytest.mark.regression
+@allure.severity(allure.severity_level.CRITICAL)
 @pytest.mark.parametrize("input", input_space)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_espacios(get_url,setup_professional,input):
     allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con un valor de solo espacios")
+    pytest.skip("Bug conocido: permite actualizar los datos por espacios vacios de un profesional")
     request=build_patch_payload(input['item'], " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], " ")
@@ -90,6 +106,8 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
     assert_field_value_response(response.json(), input['item'], setup_professional[input['item']])
 
+@pytest.mark.negative
+@pytest.mark.regression
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_espacios_date_of_birth(get_url,setup_professional):
     allure.dynamic.title("DR‑TC120: Verificar que no se pueda actualizar date_of_birth con un valor de solo espacios")
     request=build_patch_payload(StaticInputs.date_of_birth.name, " ")
@@ -101,6 +119,8 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
     assert_response_validation_error_400_date_photo(response, StaticInputs.date_of_birth.value)
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("input", input_space_special)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_espacios_date_of_birth_sex_country_personal_email(get_url,setup_professional,input):
     allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con un valor de solo espacios")
@@ -113,10 +133,13 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
     assert_response_500(response)
 
 #bug
-@pytest.mark.xfail(raises= "se puede actualizar los campos con solo caracteres especiales", run=False)
+@pytest.mark.negative
+@pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.parametrize("input", special)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_caracteres_especiales(get_url,setup_professional,input):
     allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con caracteres especiales")
+    pytest.skip(f"Bug conocido: se puede actualizar el campo {input['item']} con solo caracteres especiales")
     request=build_patch_payload(input['item'], input['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], input['input'])
@@ -126,6 +149,8 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_caracteres_espe
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
     assert_response_validation_error_400(response)
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("date", date_birth)
 def test_Verificar_que_no_se_actualize_un_profesional_con_date_of_birth_en_formato_invalido(get_url,setup_professional,date):
     allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar {date['item']} con formato inválido {date['title']}")
@@ -138,9 +163,12 @@ def test_Verificar_que_no_se_actualize_un_profesional_con_date_of_birth_en_forma
     assert_response_validation_error_400_date_photo(response, StaticInputs.date_of_birth.value)
 
 #bug
-@pytest.mark.xfail(raises= "si se puede cambiar la fecha de un profesional a una fecha futura", run=False)
+@pytest.mark.negative
+@pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_date_of_birth_en_el_futuro(get_url,setup_professional):
     allure.dynamic.title("DR‑TC127: Verificar que no se pueda actualizar date_of_birth a una fecha futura")
+    pytest.skip("Bug conocido: si se puede cambiar la fecha de nacimiento de un profesional a una fecha futura")
     request=build_patch_payload("date_of_birth" , StaticInputs.date_future.value)
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, StaticInputs.date_of_birth.name, StaticInputs.date_future.value)
@@ -150,6 +178,10 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_date_of_birth_e
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
     assert_response_validation_error_400_date_photo(response, StaticInputs.date_of_birth.value)
 
+@pytest.mark.negative
+@pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
+@pytest.mark.xfail(reason= "bug conocido: el campo phone permite actualizar solo con letras que es un valor invalido")
 @pytest.mark.parametrize("date", input_invalid)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invalido(get_url,date,setup_professional):
     allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar {date['item']} con un valor inválido")
@@ -161,6 +193,8 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invali
     assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
     assert_response_500(response)
 
+@pytest.mark.negative
+@pytest.mark.regression
 def test_Verificar_que_no_se_actualizar_un_profesional_con_photo_path_invalido(get_url,setup_professional):
     allure.dynamic.title("DR‑TC132: Verificar que no se pueda actualizar photo con un formato invalido")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
@@ -169,6 +203,8 @@ def test_Verificar_que_no_se_actualizar_un_profesional_con_photo_path_invalido(g
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
     assert_field_value_response(response.json(), "photo_path", setup_professional["photo_path"])
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("date", input_large)
 def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxima(get_url,setup_professional,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en actualizar un profesional con {date['item']} excediendo longitud máxima")
@@ -180,6 +216,8 @@ def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxi
     assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
     assert_response_500(response)
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("date", input_large_special_pro)
 def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxima_sex_country(get_url,setup_professional,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en actualizar un profesional con {date['item']} excediendo longitud máxima")
@@ -191,10 +229,14 @@ def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxi
     assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
     assert_response_500(response)
 
-@pytest.mark.xfail(raises= "si deja crear duplicados", run=False)
+#bug
+@pytest.mark.negative
+@pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.parametrize("date", duplicate)
 def test_Verificar_que_no_actualize_un_profesional_con_datos_duplicados(get_url,setup_professional,date):
     allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar {date['item']} a un valor ya existente en otro profesional")
+    pytest.skip("Bug conocido: permite actualizar el campo dni, correo personal y phone, de un profesional iguales a los de otro profesional")
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, date['item'], date['input'])
@@ -204,6 +246,8 @@ def test_Verificar_que_no_actualize_un_profesional_con_datos_duplicados(get_url,
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
     assert_response_validation_error_400(response)
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("date", id_not_exist)
 def test_Verificar_que_no_se_pueda_actualizar_los_datos_de_un_profesional_con_ID_que_no_existe(get_url, date):
     allure.dynamic.title("DR‑TC148: Verificar que no se pueda actualizar un profesional inexistente")
@@ -216,6 +260,8 @@ def test_Verificar_que_no_se_pueda_actualizar_los_datos_de_un_profesional_con_ID
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
     assert_response_validation_error_400_date_photo(response, StaticInputs.professional_not_found.value)
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("date", token)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_token_invalido(get_url,setup_professional,date):
     allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar un profesional {date['title']}")

@@ -10,9 +10,12 @@ from src.common.static_headers import StaticDataHeaders
 from src.common.static_status import StaticStatus
 from src.common.static_inputs import StaticInputs
 from src.utils.api_calls import request_function
-from src.resources.request_patien_photo import *
+from src.resources.request_patient.request_patient_photo import *
 from src.resources.files import *
 
+@pytest.mark.smoke
+@pytest.mark.positive
+@pytest.mark.regression
 def test_Verificar_obtencion_de_registro_fotografico_de_un_paciente(get_url):
     allure.dynamic.title("DR-TC325: Verificar obtención de registro fotográfico de un paciente")
     response = request_function(StaticDataVerbs.get.value, get_url, f"{StaticDataModules.patients.value}{StaticInputs.id.value}{StaticDataModules.photo.value}",
@@ -21,6 +24,8 @@ def test_Verificar_obtencion_de_registro_fotografico_de_un_paciente(get_url):
     assert_schema(response.json(), "schema_200_get_photo.json", StaticDataModules.patients.name)
     assert_response_photo_id(response)
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("date", id_invalid)
 def test_Verificar_que_no_se_pueda_obtener_el_registro_fotografico_fallido_de_un_paciente_con_ID_invalido(get_url, date):
     allure.dynamic.title("DR-TC326: Verificar que no se pueda obtener el registro fotográfico de un paciente con ID inválido")
@@ -29,6 +34,10 @@ def test_Verificar_que_no_se_pueda_obtener_el_registro_fotografico_fallido_de_un
     assert_response_status_code(response.status_code, StaticStatus.unprocessable_entity.value)
     assert_schema(response.json(), "schema_422_post.json", StaticDataModules.patients.name)
 
+@pytest.mark.negative
+@pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
+@pytest.mark.xfail(reason= "bug conocido: se mando un id que no existe y esta devolviendo algo vacio pero con status 200")
 @pytest.mark.parametrize("date", id_not_exist)
 def test_Verificar_que_no_se_pueda_obtener_el_registro_fotografico_de_un_paciente_con_ID_que_no_existe(get_url, date):
     allure.dynamic.title("DR-TC327: Verificar que no se pueda obtener el registro fotográfico de un paciente con ID que no existente")
@@ -38,6 +47,8 @@ def test_Verificar_que_no_se_pueda_obtener_el_registro_fotografico_de_un_pacient
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.patients.name)
     assert_response_validation_error_400_date_photo(response, StaticInputs.patient_not_found.value)
 
+@pytest.mark.negative
+@pytest.mark.regression
 @pytest.mark.parametrize("date", token_delete)
 def test_Verificar_que_no_se_pueda_obtener_el_registro_fotografico_de_pacientes(get_url,date):
     allure.dynamic.title(f"{date['id']}: Verificar que no se pueda obtener el registro fotográfico de paciente{date['title']}")

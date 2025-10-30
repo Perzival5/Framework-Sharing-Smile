@@ -77,3 +77,8 @@ def build_random_field(field) -> str:
         return fake.address()
 
     raise ValueError(f"Campo no soportado: {field}")
+
+def payload_bad(request):
+    request["phone"] = fake.random_number(digits=8, fix_len=True)
+    request["email"] = fake.email()
+    return request

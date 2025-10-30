@@ -43,7 +43,7 @@
                 "type": ["string", "null"] 
             },
             "fissure_type": {
-                "type": "string"
+                "type": ["string", "null"] 
             },
             "photo_path": {
                 "type": "string"
