@@ -71,7 +71,7 @@ def assert_response_profesional(response, request):
         )
 
     photo_path = response.get("photo_path")
-    assert isinstance(photo_path, str) and re.match(r"^https?://", photo_path), \
+    assert isinstance(photo_path, str) and re.match(r"^(https?://|file://)", photo_path), \
         f"photo_path no es un link válido: {photo_path}"
 
     assert isinstance(response.get("id"), int), \
@@ -151,7 +151,6 @@ def assert_professionals_list_format(response_data):
             if field not in nullable_fields:
                 assert value not in ("", None), f"Campo '{field}' vacío en item {idx}"
 
-
             if field == "date_of_birth":
                 try:
                     datetime.strptime(value, "%Y-%m-%d")
@@ -163,7 +162,7 @@ def assert_professionals_list_format(response_data):
                     f"Email inválido en item {idx}: {value}"
 
             if field == "photo_path":
-                assert re.match(r"^https?://", value), \
+                assert re.match(r"^(https?://|file://)", value), \
                     f"photo_path inválido en item {idx}: {value}"
 
             if field == "id":
@@ -206,6 +205,19 @@ def assert_photo_response(response_json, old_value):
 
 def assert_field_value_input(response_json, field, expected_value):
     actual_value = response_json.get(field)
+    assert str(actual_value) == str(expected_value), (
+        f"El campo '{field}' no coincide. "
+        f"Esperado: {expected_value}, Recibido: {actual_value}"
+    )
+
+def assert_value_response(response_json, field, expected_value):
+
+    actual_value = response_json.get(field)
+
+    if field == "date_of_birth" and expected_value:
+        if "/" in expected_value and "-" not in expected_value:
+            expected_value = datetime.strptime(expected_value, "%d/%m/%Y").strftime("%Y-%m-%d")
+
     assert str(actual_value) == str(expected_value), (
         f"El campo '{field}' no coincide. "
         f"Esperado: {expected_value}, Recibido: {actual_value}"

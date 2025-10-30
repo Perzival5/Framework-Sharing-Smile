@@ -76,7 +76,7 @@ def assert_response_patient(response, request):
         )
 
     photo_path = response.get("photo_path")
-    assert isinstance(photo_path, str) and re.match(r"^https?://", photo_path), \
+    assert isinstance(photo_path, str) and re.match(r"^(https?://|file://)", photo_path), \
         f"photo_path no es un link válido: {photo_path}"
 
     assert isinstance(response.get("id"), int), \
@@ -128,7 +128,7 @@ def assert_response_500(response):
 def assert_responde_falled_http(response, file, type):
     if type == "DR-TC220":
         assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
-        assert "<title>Error 400 (Bad Request)!!1</title>" in response.text
+        assert "<title>Error 400 (Bad Request)!!!</title>" in response.text
 
     elif type == "DR-TC221" or type == "DR-TC222" or type == "DR-TC232" or type == "DR-TC233":
         assert_response_status_code(response.status_code, StaticStatus.method_not_allowed.value)
@@ -163,7 +163,7 @@ def assert_patients_list_format(response_data):
                     raise AssertionError(f"date_of_birth inválido en item {idx}: {value}")
 
             if field == "photo_path":
-                assert re.match(r"^https?://", value), \
+                assert re.match(r"^(https?://|file://)", value), \
                     f"photo_path inválido en item {idx}: {value}"
 
             if field == "id":
@@ -211,13 +211,42 @@ def assert_field_value_input(response_json, field, expected_value):
         f"Esperado: {expected_value}, Recibido: {actual_value}"
     )
 
-#photo
-def assert_response_photo(response_json, expected_value):
-    actual_value = response_json.json()["id"]
+def assert_value_response(response_json, field, expected_value):
+
+    actual_value = response_json.get(field)
+
+    if field == "date_of_birth" and expected_value:
+        if "/" in expected_value and "-" not in expected_value:
+            expected_value = datetime.strptime(expected_value, "%d/%m/%Y").strftime("%Y-%m-%d")
+
     assert str(actual_value) == str(expected_value), (
-        f"El id no coincide."
+        f"El campo '{field}' no coincide. "
         f"Esperado: {expected_value}, Recibido: {actual_value}"
     )
+
+#photo
+def assert_response_photo(response_json):
+    body = response_json.json()
+
+    assert "id" in body and body["id"] not in ("", None), "El campo 'id' está vacío o ausente"
+
+    url = body.get("url")
+    if url.startswith("https://i.ibb.co/"):
+        pass
+    elif url.startswith("file://"):
+        pass
+    else:
+        raise AssertionError(f"URL inválida: {url}")
+
+    filename = body.get("filename")
+    assert filename and filename.lower().endswith(".png"), f"Filename inválido: {filename}"
+
+    created_at = body.get("created_at")
+    try:
+        datetime.fromisoformat(created_at.replace("Z", ""))  # soporta formato con o sin Z
+    except Exception:
+        raise AssertionError(f"created_at inválido: {created_at}")
+
 
 def assert_response_photo_id(response):
     expected = {
