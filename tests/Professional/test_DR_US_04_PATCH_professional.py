@@ -21,7 +21,7 @@ def test_Verificar_actualizar_datos_de_un_profesional_con_todos_los_campos_váli
     request=build_user_payload()
     assert_schema(request, "schema_input.json", StaticDataModules.professionals.name)
     assert_payload_professional(request)
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -35,7 +35,7 @@ def test_Verificar_actualización_exitosa_de_un_profesional_modificando_solo_un_
     random = build_random_field(input['item'])
     request=build_patch_payload(input['item'], random)
     assert_field_value_input(request, input['item'], random)
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -45,7 +45,7 @@ def test_Verificar_actualización_exitosa_de_un_profesional_modificando_solo_un_
 @pytest.mark.positive
 def test_Verificar_actualización_exitosa_de_un_profesional_modificando_el_campo_photo(get_url,setup_professional):
     allure.dynamic.title("DR‑TC93: Verificar actualización exitosa de un profesional modificando solo el campo photo")
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -59,7 +59,7 @@ def test_Verificar_que_se_pueda_actualizar_un_profesional_con_datos_validos_es_s
     request=build_patch_payload(input['item'], input['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], input['input'])
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -73,7 +73,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_vacio(get
     request=build_patch_payload(input['item'], "")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], "")
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -83,7 +83,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_vacio(get
 @pytest.mark.regression
 def test_Verificar_que_no_se_pueda_actualizar_photo_por_uno_vacio(get_url,setup_professional):
     allure.dynamic.title("DR‑TC113: Verificar que no se pueda actualizar photo por uno vacio")
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, files={"photo": ""})
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -100,7 +100,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
     request=build_patch_payload(input['item'], " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], " ")
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -113,7 +113,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
     request=build_patch_payload(StaticInputs.date_of_birth.name, " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, "date_of_birth", " ")
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
@@ -127,7 +127,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
     request=build_patch_payload(input['item'], " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], " ")
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
     assert_response_500(response)
@@ -143,7 +143,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_caracteres_espe
     request=build_patch_payload(input['item'], input['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], input['input'])
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
@@ -156,7 +156,7 @@ def test_Verificar_que_no_se_actualize_un_profesional_con_date_of_birth_en_forma
     allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar {date['item']} con formato inválido {date['title']}")
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
@@ -172,7 +172,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_date_of_birth_e
     request=build_patch_payload("date_of_birth" , StaticInputs.date_future.value)
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, StaticInputs.date_of_birth.name, StaticInputs.date_future.value)
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
@@ -188,7 +188,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invali
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, date['item'], date['input'])
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
     assert_response_500(response)
@@ -197,7 +197,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invali
 @pytest.mark.regression
 def test_Verificar_que_no_se_actualizar_un_profesional_con_photo_path_invalido(get_url,setup_professional):
     allure.dynamic.title("DR‑TC132: Verificar que no se pueda actualizar photo con un formato invalido")
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, files=get_file_txt())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
     assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
@@ -211,7 +211,7 @@ def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxi
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, date['item'], date['input'])
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
     assert_response_500(response)
@@ -224,7 +224,7 @@ def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxi
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, date['item'], date['input'])
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
     assert_response_500(response)
@@ -240,7 +240,7 @@ def test_Verificar_que_no_actualize_un_profesional_con_datos_duplicados(get_url,
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, date['item'], date['input'])
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
@@ -268,7 +268,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_token_invalido(
     request=build_user_payload()
     assert_schema(request, "schema_input.json", StaticDataModules.professionals.name)
     assert_payload_professional(request)
-    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional["id"]}",
+    response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=date['header'], payload=request, files=get_file_edit())
     assert_response_status_code(response.status_code, date['status'])
     assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)

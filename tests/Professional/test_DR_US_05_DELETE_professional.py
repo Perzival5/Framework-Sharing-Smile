@@ -16,7 +16,7 @@ from src.resources.request_professional.request_DELETE_professional import id_in
 @pytest.mark.regression
 def test_Verificar_eliminación_de_profesional_existente(get_url,setup_create_professional):
     allure.dynamic.title("DR-TC158: Verificar eliminación de profesional existente")
-    response = request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.professionals.value}{setup_create_professional["id"]}",
+    response = request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.professionals.value}{setup_create_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value)
     assert_response_status_code(response.status_code, StaticStatus.no_content.value)
 

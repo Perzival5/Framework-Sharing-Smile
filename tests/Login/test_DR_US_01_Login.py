@@ -55,7 +55,7 @@ def test_Verificar_login_fallido_con_metodo_HTTP_incorrecto(get_url, http):
 @pytest.mark.negative
 @pytest.mark.regression
 def test_Verificar_login_fallido_con_payload_invalido(get_url):
-    allure.dynamic.title(f"DR-TC12: Verificar login fallido con un payload invalido")
+    allure.dynamic.title("DR-TC12: Verificar login fallido con un payload invalido")
     request=login_payload(None, None)
     response = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.login.value,
                                 header_type=StaticDataHeaders.header_login.value, payload=request)

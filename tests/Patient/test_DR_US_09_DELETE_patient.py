@@ -16,7 +16,7 @@ from src.resources.request_patient.request_DELETE_patient import *
 @pytest.mark.regression
 def test_Verificar_eliminación_de_paciente_existente(get_url,setup_create_patient):
     allure.dynamic.title("DR-TC313: Verificar eliminación de paciente existente")
-    response = request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.patients.value}{setup_create_patient["id"]}",
+    response = request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.patients.value}{setup_create_patient['id']}",
                                 header_type=StaticDataHeaders.header_delete_patient.value)
     assert_response_status_code(response.status_code, StaticStatus.no_content.value)
 

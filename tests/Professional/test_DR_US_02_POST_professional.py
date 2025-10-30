@@ -58,7 +58,7 @@ def test_Verificar_que_no_se_pueda_registrar_un_profesional_sin(get_url,input):
 @pytest.mark.negative
 @pytest.mark.regression
 def test_Verificar_que_no_se_pueda_registrar_un_profesional_sin_photo(get_url):
-    allure.dynamic.title(f"DR-TC25: Verificar que no se pueda registrar un profesional sin photo")
+    allure.dynamic.title("DR-TC25: Verificar que no se pueda registrar un profesional sin photo")
     request=build_user_payload()
     assert_schema(request, "schema_input.json", StaticDataModules.professionals.name)
     assert_payload_professional(request)
