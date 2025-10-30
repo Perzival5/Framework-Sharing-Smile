@@ -1,4 +1,4 @@
-name: Pytest + Allure
+name: CI - Pytest + Allure
 
 on:
   push:
@@ -10,20 +10,11 @@ on:
   workflow_dispatch:
 
 jobs:
-
   test:
     runs-on: ubuntu-latest
-    env:
-      BASE_URL: ${{ secrets.BASE_URL }}
-      ADMIN_USER: ${{ secrets.ADMIN_USER }}
-      ADMIN_PASS: ${{ secrets.ADMIN_PASS }}
-      ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
-      PRO_USER: ${{ secrets.PRO_USER }}
-      PRO_PASS: ${{ secrets.PRO_PASS }}
-      PRO_TOKEN: ${{ secrets.PRO_TOKEN }}
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -37,6 +28,16 @@ jobs:
           pip install -r requirements.txt
           pip install allure-pytest
 
+      - name: Set environment variables from secrets
+        run: |
+          echo "BASE_URL=${{ secrets.BASE_URL }}" >> $GITHUB_ENV
+          echo "ADMIN_USER=${{ secrets.ADMIN_USER }}" >> $GITHUB_ENV
+          echo "ADMIN_PASS=${{ secrets.ADMIN_PASS }}" >> $GITHUB_ENV
+          echo "ADMIN_TOKEN=${{ secrets.ADMIN_TOKEN }}" >> $GITHUB_ENV
+          echo "PRO_USER=${{ secrets.PRO_USER }}" >> $GITHUB_ENV
+          echo "PRO_PASS=${{ secrets.PRO_PASS }}" >> $GITHUB_ENV
+          echo "PRO_TOKEN=${{ secrets.PRO_TOKEN }}" >> $GITHUB_ENV
+
       - name: Run pytest with Allure
         run: |
           pytest --alluredir=allure-results --maxfail=1 --disable-warnings -q
@@ -48,19 +49,6 @@ jobs:
           name: allure-results
           path: allure-results/
 
-      - name: Generate Allure report
-        if: always()
-        run: |
-          pip install allure-commandline
-          allure generate allure-results -o allure-report --clean
-
-      - name: Upload Allure HTML report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report/
-
       - name: Load previous test report history
         uses: actions/checkout@v4
         if: always()
@@ -69,7 +57,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Build Allure report with history
+      - name: Build Allure report
         uses: simple-elf/allure-report-action@v1.7
         if: always()
         with:
@@ -84,3 +72,10 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: allure-history
+
+      - name: Upload Allure HTML report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: allure-history/

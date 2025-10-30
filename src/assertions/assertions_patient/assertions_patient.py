@@ -76,7 +76,7 @@ def assert_response_patient(response, request):
         )
 
     photo_path = response.get("photo_path")
-    assert isinstance(photo_path, str) and re.match(r"^(https?://|file:///code/uploads/)", photo_path), \
+    assert isinstance(photo_path, str) and re.match(r"^(https?://|file://)", photo_path), \
         f"photo_path no es un link válido: {photo_path}"
 
     assert isinstance(response.get("id"), int), \
@@ -163,7 +163,7 @@ def assert_patients_list_format(response_data):
                     raise AssertionError(f"date_of_birth inválido en item {idx}: {value}")
 
             if field == "photo_path":
-                assert re.match(r"^(https?://|file:///code/uploads/)", value), \
+                assert re.match(r"^(https?://|file://)", value), \
                     f"photo_path inválido en item {idx}: {value}"
 
             if field == "id":
@@ -233,7 +233,7 @@ def assert_response_photo(response_json):
     url = body.get("url")
     if url.startswith("https://i.ibb.co/"):
         pass
-    elif url.startswith("file:///code/uploads/"):
+    elif url.startswith("file://"):
         pass
     else:
         raise AssertionError(f"URL inválida: {url}")

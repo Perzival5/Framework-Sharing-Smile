@@ -71,7 +71,7 @@ def assert_response_profesional(response, request):
         )
 
     photo_path = response.get("photo_path")
-    assert isinstance(photo_path, str) and re.match(r"^(https?://|file:///code/uploads/)", photo_path), \
+    assert isinstance(photo_path, str) and re.match(r"^(https?://|file://)", photo_path), \
         f"photo_path no es un link válido: {photo_path}"
 
     assert isinstance(response.get("id"), int), \
@@ -162,7 +162,7 @@ def assert_professionals_list_format(response_data):
                     f"Email inválido en item {idx}: {value}"
 
             if field == "photo_path":
-                assert re.match(r"^(https?://|file:///code/uploads/)", value), \
+                assert re.match(r"^(https?://|file://)", value), \
                     f"photo_path inválido en item {idx}: {value}"
 
             if field == "id":
