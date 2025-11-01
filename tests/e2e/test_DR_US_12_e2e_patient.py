@@ -11,7 +11,7 @@ from src.assertions.global_assertions import *
 @pytest.mark.e2e
 @pytest.mark.positive
 @pytest.mark.regression
-def test_DR_TC_130_Patient(get_url):
+def test_DR_TC_330_Patient(get_url):
     request=build_patient_payload()
     response_post = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.patients.value,
                                 header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_patient())

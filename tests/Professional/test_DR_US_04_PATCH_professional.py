@@ -69,7 +69,7 @@ def test_Verificar_que_se_pueda_actualizar_un_profesional_con_datos_validos_es_s
 @pytest.mark.regression
 @pytest.mark.parametrize("input", input_patch_void)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_vacio(get_url,setup_professional,input):
-    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con un valor vacio")
+    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar un profesional con {input['item']} con un valor vacio")
     request=build_patch_payload(input['item'], "")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], "")
@@ -82,7 +82,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_vacio(get
 @pytest.mark.negative
 @pytest.mark.regression
 def test_Verificar_que_no_se_pueda_actualizar_photo_por_uno_vacio(get_url,setup_professional):
-    allure.dynamic.title("DR‑TC113: Verificar que no se pueda actualizar photo por uno vacio")
+    allure.dynamic.title("DR‑TC113: Verificar que no se pueda actualizar un profesional con photo vacio")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, files={"photo": ""})
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
@@ -95,7 +95,7 @@ def test_Verificar_que_no_se_pueda_actualizar_photo_por_uno_vacio(get_url,setup_
 @allure.severity(allure.severity_level.CRITICAL)
 @pytest.mark.parametrize("input", input_space)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_espacios(get_url,setup_professional,input):
-    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con un valor de solo espacios")
+    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar un profesional con {input['item']} con un valor de solo espacios")
     pytest.skip("Bug conocido: permite actualizar los datos por espacios vacios de un profesional")
     request=build_patch_payload(input['item'], " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
@@ -109,7 +109,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
 @pytest.mark.negative
 @pytest.mark.regression
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_espacios_date_of_birth(get_url,setup_professional):
-    allure.dynamic.title("DR‑TC120: Verificar que no se pueda actualizar date_of_birth con un valor de solo espacios")
+    allure.dynamic.title("DR‑TC120: Verificar que no se pueda actualizar un profesional con date_of_birth con un valor de solo espacios")
     request=build_patch_payload(StaticInputs.date_of_birth.name, " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, "date_of_birth", " ")
@@ -123,7 +123,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
 @pytest.mark.regression
 @pytest.mark.parametrize("input", input_space_special)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_espacios_date_of_birth_sex_country_personal_email(get_url,setup_professional,input):
-    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con un valor de solo espacios")
+    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar un profesional con {input['item']} con un valor de solo espacios")
     request=build_patch_payload(input['item'], " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], " ")
@@ -138,7 +138,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
 @allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.parametrize("input", special)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_caracteres_especiales(get_url,setup_professional,input):
-    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar {input['item']} con caracteres especiales")
+    allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar un profesional con {input['item']} con caracteres especiales")
     pytest.skip(f"Bug conocido: se puede actualizar el campo {input['item']} con solo caracteres especiales")
     request=build_patch_payload(input['item'], input['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
@@ -153,7 +153,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_caracteres_espe
 @pytest.mark.regression
 @pytest.mark.parametrize("date", date_birth)
 def test_Verificar_que_no_se_actualize_un_profesional_con_date_of_birth_en_formato_invalido(get_url,setup_professional,date):
-    allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar {date['item']} con formato inválido {date['title']}")
+    allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar un profesional con {date['item']} con formato inválido {date['title']}")
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
@@ -167,7 +167,7 @@ def test_Verificar_que_no_se_actualize_un_profesional_con_date_of_birth_en_forma
 @pytest.mark.regression
 @allure.severity(allure.severity_level.NORMAL)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_date_of_birth_en_el_futuro(get_url,setup_professional):
-    allure.dynamic.title("DR‑TC127: Verificar que no se pueda actualizar date_of_birth a una fecha futura")
+    allure.dynamic.title("DR‑TC127: Verificar que no se pueda actualizar un profesional con date_of_birth a una fecha futura")
     pytest.skip("Bug conocido: si se puede cambiar la fecha de nacimiento de un profesional a una fecha futura")
     request=build_patch_payload("date_of_birth" , StaticInputs.date_future.value)
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
@@ -184,7 +184,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_date_of_birth_e
 @pytest.mark.xfail(reason= "bug conocido: el campo phone permite actualizar solo con letras que es un valor invalido")
 @pytest.mark.parametrize("date", input_invalid)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invalido(get_url,date,setup_professional):
-    allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar {date['item']} con un valor inválido")
+    allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar un profesional con {date['item']} con un valor inválido")
     request=build_patch_payload(date['item'], date['input'])
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, date['item'], date['input'])
@@ -196,7 +196,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invali
 @pytest.mark.negative
 @pytest.mark.regression
 def test_Verificar_que_no_se_actualizar_un_profesional_con_photo_path_invalido(get_url,setup_professional):
-    allure.dynamic.title("DR‑TC132: Verificar que no se pueda actualizar photo con un formato invalido")
+    allure.dynamic.title("DR‑TC132: Verificar que no se pueda actualizar un profesional con photo con un formato invalido")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, files=get_file_txt())
     assert_response_status_code(response.status_code, StaticStatus.ok.value)
