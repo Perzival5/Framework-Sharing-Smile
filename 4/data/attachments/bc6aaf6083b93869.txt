@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Marie', 'last_name': 'Vasquez', 'date_of_birth': '05/12/2014', 'sex': 'femenino', 'country': 'BR', 'dni': '21454902', 'father_name': 'LeonelMamaniMaximilianoGonzalezFernandezSantosPerezChoqueCasaMartinezFernandezDelCampoGutierrezLopez', 'mother_name': 'Donna', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '50611474', 'ref_number_2': '25697243', 'city': 'North Rebeccaberg', 'province': 'Montana', 'address': '05131 Silva Crescent\nKingport, MD 42744'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:31:05
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '67e960fb75004931e54e3c5bf91ace35', 'date': 'Sat, 01 Nov 2025 23:31:05 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/auth/token
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json'}
+DEBUG    api_logger:logger.py:32 Request payload: {'username': 'profesional@project-x.com', 'password': 'profesional'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:17
+INFO     api_logger:logger.py:44 Status code: 200
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'cb14868cc2ad4299299bfff6fc328f6e', 'date': 'Sat, 01 Nov 2025 23:30:17 GMT', 'server': 'Google Frontend', 'Content-Length': '237', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNjQ0NjE3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.FthEsXG2GW6rVblDNx7p2TZ-QZOjmBXBa6CV5lC3Ry4', 'token_type': 'Bearer'}

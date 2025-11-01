@@ -1,0 +1,18 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'April', 'last_name': 'Moore', 'date_of_birth': '11/05/2012', 'sex': 'masculino', 'country': 'MX', 'dni': '58149075', 'father_name': 'Kristopher', 'mother_name': 'Rachel', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '93958034', 'ref_number_2': '27185704', 'city': 'West Tiffany', 'province': 'Texas', 'address': 'USCGC Black\nFPO AE 09472'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:47
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'a37b043a96f02b0345118552a9264a0c', 'date': 'Sat, 01 Nov 2025 23:30:47 GMT', 'server': 'Google Frontend', 'Content-Length': '446', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'April', 'last_name': 'Moore', 'date_of_birth': '2012-05-11', 'sex': 'masculino', 'country': 'MX', 'city': 'West Tiffany', 'province': 'Texas', 'address': 'USCGC Black\nFPO AE 09472', 'dni': '58149075', 'father_name': 'Kristopher', 'mother_name': 'Rachel', 'ref_number_1': '93958034', 'ref_number_2': '27185704', 'fissure_type': 'Flap Bilateral', 'email': None, 'phone': None, 'photo_path': 'https://i.ibb.co/WNLWynCT/16d19e32eacb.png', 'id': 911, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/911
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:47
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '2b29b9873dd0b694ced0bd18f7b994a2;o=1', 'date': 'Sat, 01 Nov 2025 23:30:47 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

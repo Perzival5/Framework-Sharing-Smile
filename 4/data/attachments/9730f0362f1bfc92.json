@@ -1,0 +1,1 @@
+{'detail': "1 validation error for ProfessionalCreate\nphone\n  Value error, phone must contain only digits [type=value_error, input_value='letras', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

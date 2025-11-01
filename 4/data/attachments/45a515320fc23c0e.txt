@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'David', 'last_name': 'Miller', 'date_of_birth': '', 'sex': 'femenino', 'country': 'PE', 'dni': '24300790', 'father_name': 'James', 'mother_name': 'Ashley', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '20283737', 'ref_number_2': '45759038', 'city': 'West William', 'province': 'Iowa', 'address': '931 Courtney Pine\nChristinamouth, MO 24287'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:26
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'cd0a109ddef629edf6719f1fdb9b9583', 'date': 'Sat, 01 Nov 2025 23:30:26 GMT', 'server': 'Google Frontend', 'Content-Length': '148', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'date_of_birth'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

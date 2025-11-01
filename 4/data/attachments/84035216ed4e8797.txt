@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Jaclyn', 'last_name': 'Hood', 'date_of_birth': '29/12/2018', 'sex': 'femenino', 'country': 'MX', 'dni': '&&&&@@@@@@', 'father_name': 'Miguel', 'mother_name': 'Barbara', 'fissure_type': 'Flap izq', 'ref_number_1': '11246410', 'ref_number_2': '54003791', 'city': 'Bryanmouth', 'province': 'Texas', 'address': '83416 Howard Burgs\nRobinsonmouth, PA 01891'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:51
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '009679444984a853fc53795d0b5d2454', 'date': 'Sat, 01 Nov 2025 23:30:51 GMT', 'server': 'Google Frontend', 'Content-Length': '454', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Jaclyn', 'last_name': 'Hood', 'date_of_birth': '2018-12-29', 'sex': 'femenino', 'country': 'MX', 'city': 'Bryanmouth', 'province': 'Texas', 'address': '83416 Howard Burgs\nRobinsonmouth, PA 01891', 'dni': '&&&&@@@@@@', 'father_name': 'Miguel', 'mother_name': 'Barbara', 'ref_number_1': '11246410', 'ref_number_2': '54003791', 'fissure_type': 'Flap izq', 'email': None, 'phone': None, 'photo_path': 'https://i.ibb.co/WNLWynCT/16d19e32eacb.png', 'id': 913, 'is_deleted': False}

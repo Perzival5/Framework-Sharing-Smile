@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer dasvasbrbebwebwbweb'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Timothy', 'last_name': 'Bradley', 'date_of_birth': '09/04/1990', 'sex': 'femenino', 'country': 'PE', 'dni': '55186095', 'personal_email': 'adriana85@example.com', 'phone': '84601987', 'profession': 'Oncologist', 'specialty': 'away', 'city': 'New Garyberg', 'province': 'Oregon', 'address': '3415 Scott Circle\nEast Zachary, OH 19352'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:33:49
+INFO     api_logger:logger.py:44 Status code: 401
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '53e800beef62172e254e393a9d223423', 'date': 'Sat, 01 Nov 2025 23:33:48 GMT', 'server': 'Google Frontend', 'Content-Length': '26', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Invalid token'}
