@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sat Nov 01 23:18:40 GMT 2025","Sat Nov 01 23:18:41 GMT 2025","562","tests.Login","test_DR_US_01_Login","","","","DR-TC01: Verificar login exitoso con credenciales válidas como admin",""
