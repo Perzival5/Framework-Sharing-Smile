@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: PUT
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Suzanne', 'last_name': 'Williams', 'date_of_birth': '12/03/2023', 'sex': 'femenino', 'country': 'BR', 'dni': '42373016', 'father_name': 'Jacob', 'mother_name': 'Stephanie', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '37428437', 'ref_number_2': '83710653', 'city': 'East Richard', 'province': 'Iowa', 'address': '430 Robert Squares Suite 457\nEast Williamside, WI 36732'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:31:25
-INFO     api_logger:logger.py:44 Status code: 405
-DEBUG    api_logger:logger.py:48 Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': '0699cbb2443a63d3fbe82712a49c111f', 'date': 'Sat, 01 Nov 2025 23:31:25 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Method Not Allowed'}

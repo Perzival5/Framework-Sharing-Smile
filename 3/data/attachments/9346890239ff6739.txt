@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Lisa', 'last_name': 'Jackson', 'date_of_birth': '18/01/2013', 'sex': 'femenino', 'country': '', 'dni': '67991650', 'father_name': 'Christopher', 'mother_name': 'Leslie', 'fissure_type': 'Flap izq', 'ref_number_1': '48421049', 'ref_number_2': '34634308', 'city': 'East Angela', 'province': 'Louisiana', 'address': '2956 Griffin Mountain\nRyanfort, AL 44438'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:21
-INFO     api_logger:logger.py:44 Status code: 422
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '3b20ce7692f2bc1925b3c5feaff8b823', 'date': 'Thu, 30 Oct 2025 21:14:21 GMT', 'server': 'Google Frontend', 'Content-Length': '142', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'country'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

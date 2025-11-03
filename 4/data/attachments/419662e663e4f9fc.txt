@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: DELETE
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Melinda', 'last_name': 'Parker', 'date_of_birth': '28/06/2016', 'sex': 'femenino', 'country': 'AR', 'dni': '79536024', 'father_name': 'Jack', 'mother_name': 'Holly', 'fissure_type': 'Flap der', 'ref_number_1': '83176160', 'ref_number_2': '92838362', 'city': 'Alyssaview', 'province': 'Colorado', 'address': '562 Catherine Lodge Suite 416\nConwaychester, NV 31955'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:31:25
-INFO     api_logger:logger.py:44 Status code: 405
-DEBUG    api_logger:logger.py:48 Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': 'f46591055a21147c664076d342759a2a', 'date': 'Sat, 01 Nov 2025 23:31:25 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Method Not Allowed'}

@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: DELETE
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1
-DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer dasvasbrbebwebwbweb'}
-DEBUG    api_logger:logger.py:32 Request payload: None
-INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:20:03
-INFO     api_logger:logger.py:44 Status code: 401
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '1531b4bb642165017762b062a38fbde1', 'date': 'Thu, 30 Oct 2025 21:20:03 GMT', 'server': 'Google Frontend', 'Content-Length': '26', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Invalid token'}

@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Chad', 'last_name': 'Hamilton', 'date_of_birth': '28/06/2016', 'sex': 'femenino', 'country': 'PE', 'dni': '27664012', 'father_name': 'Jeffery', 'mother_name': 'Melanie', 'fissure_type': 'Flap izq', 'ref_number_1': '97679785', 'ref_number_2': '89765432154852', 'city': 'East Melindamouth', 'province': 'Michigan', 'address': 'PSC 1664, Box 7944\nAPO AE 08153'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:31:12
-INFO     api_logger:logger.py:44 Status code: 500
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '88ba1022b5ed1a60104fde39672a40d5', 'date': 'Sat, 01 Nov 2025 23:31:12 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

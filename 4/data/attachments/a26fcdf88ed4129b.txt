@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Nicole', 'last_name': 'Shannon', 'date_of_birth': '11/01/2021', 'sex': 'indefinido', 'country': 'DO', 'dni': '18923390', 'father_name': 'Terry', 'mother_name': 'Maria', 'fissure_type': 'Flap der', 'ref_number_1': '14316901', 'ref_number_2': '12908337', 'city': 'Royfurt', 'province': 'Ohio', 'address': 'Unit 9405 Box 8890\nDPO AE 36599'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:56
-INFO     api_logger:logger.py:44 Status code: 400
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'cbc59f2c0399a67fa5cd97ddcbbbf030', 'date': 'Sat, 01 Nov 2025 23:30:56 GMT', 'server': 'Google Frontend', 'Content-Length': '250', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\nsex\n  Value error, sex must be 'Masculino' or 'Femenino' [type=value_error, input_value='indefinido', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

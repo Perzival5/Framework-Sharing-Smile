@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Mark', 'last_name': 'Hansen', 'date_of_birth': '24/05/2013', 'sex': 'masculino', 'country': 'AR', 'dni': '40437822', 'father_name': 'Nicholas', 'mother_name': 'Sharon', 'fissure_type': '', 'ref_number_1': '86789183', 'ref_number_2': '24392968', 'city': 'Joshuafurt', 'province': 'North Dakota', 'address': '524 Brandon Oval\nEast Leslie, MA 24087'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:30
-INFO     api_logger:logger.py:44 Status code: 201
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '1ef06788da9c0cc4c64d55bbb1c7a314', 'date': 'Sat, 01 Nov 2025 23:30:30 GMT', 'server': 'Google Frontend', 'Content-Length': '451', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Mark', 'last_name': 'Hansen', 'date_of_birth': '2013-05-24', 'sex': 'masculino', 'country': 'AR', 'city': 'Joshuafurt', 'province': 'North Dakota', 'address': '524 Brandon Oval\nEast Leslie, MA 24087', 'dni': '40437822', 'father_name': 'Nicholas', 'mother_name': 'Sharon', 'ref_number_1': '86789183', 'ref_number_2': '24392968', 'fissure_type': None, 'email': None, 'phone': None, 'photo_path': 'https://i.ibb.co/WNLWynCT/16d19e32eacb.png', 'id': 903, 'is_deleted': False}

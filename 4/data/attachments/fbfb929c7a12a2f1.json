@@ -1,1 +1,0 @@
-{'detail': "1 validation error for PatientCreate\nfissure_type\n  Value error, fissure_type must be one of: Flap der, Flap Bilateral, Flap izq [type=value_error, input_value='CaracteristicaExtendidaD...DelProfesionalSistemaQA', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

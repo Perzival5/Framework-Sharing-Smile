@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Jerry', 'last_name': 'Miller', 'date_of_birth': '02/07/2007', 'sex': 'femenino', 'country': 'BR', 'dni': '13799322', 'personal_email': 'matthew35@example.com', 'phone': '96097631', 'profession': 'Naval architect', 'specialty': 'single', 'city': 'Sosaport', 'province': 'Wyoming', 'address': '753 Mcgee Highway\nOliviaton, DE 94264'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:17:56
-INFO     api_logger:logger.py:44 Status code: 403
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'e521574e4647a74cea982b0186511801', 'date': 'Thu, 30 Oct 2025 21:17:56 GMT', 'server': 'Google Frontend', 'Content-Length': '35', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Not enough permissions'}

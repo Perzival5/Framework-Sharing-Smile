@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Nina', 'last_name': 'Walsh', 'date_of_birth': '18/09/2008', 'sex': 'femenino', 'country': 'AR', 'dni': '53206735', 'father_name': 'Daryl', 'mother_name': 'Cynthia', 'fissure_type': 'Flap der', 'ref_number_1': '', 'ref_number_2': '91756370', 'city': 'North Saraside', 'province': 'Georgia', 'address': '1647 Johnson Alley Apt. 010\nStaceyport, VT 89844'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:23
-INFO     api_logger:logger.py:44 Status code: 422
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '4964cbc3c97bf2bef6eeca3841d0db5a', 'date': 'Thu, 30 Oct 2025 21:14:23 GMT', 'server': 'Google Frontend', 'Content-Length': '147', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'ref_number_1'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

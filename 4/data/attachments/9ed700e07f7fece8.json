@@ -1,1 +1,0 @@
-{'detail': "1 validation error for ProfessionalCreate\nsex\n  Value error, sex must be 'Masculino' or 'Femenino' [type=value_error, input_value='masculinofemeninootro', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

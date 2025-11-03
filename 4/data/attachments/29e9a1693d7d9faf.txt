@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Judy', 'last_name': 'Bishop', 'date_of_birth': '25/01/2018', 'sex': 'femenino', 'country': 'DO', 'dni': '69137306', 'father_name': 'Thomas', 'mother_name': 'Toni', 'fissure_type': 'hueso', 'ref_number_1': '14570751', 'ref_number_2': '71924653', 'city': 'Lake Marialand', 'province': 'Maine', 'address': '9815 Miller Villages Apt. 900\nHamptonland, PW 66034'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:58
-INFO     api_logger:logger.py:44 Status code: 400
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '04a91000ba25f1bd3ecec9ddc4dbe33c', 'date': 'Sat, 01 Nov 2025 23:30:58 GMT', 'server': 'Google Frontend', 'Content-Length': '280', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\nfissure_type\n  Value error, fissure_type must be one of: Flap der, Flap Bilateral, Flap izq [type=value_error, input_value='hueso', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

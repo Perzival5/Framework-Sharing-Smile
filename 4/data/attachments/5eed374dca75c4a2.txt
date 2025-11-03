@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Samantha', 'last_name': 'Watts', 'date_of_birth': '15/09/2019', 'sex': 'femenino', 'country': 'US', 'dni': '60991896', 'father_name': 'Rodney', 'mother_name': 'Brenda', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '', 'ref_number_2': '74796938', 'city': 'North Laurabury', 'province': 'Montana', 'address': 'USNV Clark\nFPO AP 42956'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:29
-INFO     api_logger:logger.py:44 Status code: 422
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'e08511348637b724b5036f38d27746af', 'date': 'Sat, 01 Nov 2025 23:30:29 GMT', 'server': 'Google Frontend', 'Content-Length': '147', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'ref_number_1'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

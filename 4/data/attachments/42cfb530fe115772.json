@@ -1,1 +1,0 @@
-{'detail': "1 validation error for ProfessionalCreate\npersonal_email\n  value is not a valid email address: An email address must have an @-sign. [type=value_error, input_value='esto no es un correo', input_type=str]"}

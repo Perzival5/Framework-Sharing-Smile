@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Eric', 'last_name': 'Harrison', 'date_of_birth': '07/28/1999', 'sex': 'masculino', 'country': 'US', 'dni': '33753754', 'father_name': 'Christian', 'mother_name': 'Alexandra', 'fissure_type': 'Flap der', 'ref_number_1': '46099169', 'ref_number_2': '76817387', 'city': 'Geraldmouth', 'province': 'Utah', 'address': '622 Katherine Freeway Suite 842\nBellborough, OR 47100'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-11-01 23:30:58
-INFO     api_logger:logger.py:44 Status code: 400
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '064134daaeaff9f3aa158e82f7ac35c3;o=1', 'date': 'Sat, 01 Nov 2025 23:30:58 GMT', 'server': 'Google Frontend', 'Content-Length': '45', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'date_of_birth must be dd/mm/yyyy'}

@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'AlejandroMaximilianoGonzalezFernandezSantosPerez', 'last_name': 'Brown', 'date_of_birth': '26/06/2024', 'sex': 'femenino', 'country': 'AR', 'dni': '83206348', 'father_name': 'Billy', 'mother_name': 'Elizabeth', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '17404490', 'ref_number_2': '14265515', 'city': 'Lake Robert', 'province': 'Kentucky', 'address': '362 Donna River Suite 473\nJasonstad, MD 33013'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:14:58
-INFO     api_logger:logger.py:44 Status code: 500
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': 'a4bf5987a1b2857517a384bc737a7f35', 'date': 'Thu, 30 Oct 2025 21:14:58 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

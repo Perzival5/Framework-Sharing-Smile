@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyNDYxOTg3LCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.dRcA-loesKJ5AwY-h96NCptfJtR_FDfeQ2i1vtL4s-I'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Earl', 'last_name': 'Lopez', 'date_of_birth': '17/12/2010', 'sex': 'masculino', 'country': 'paises bajos', 'dni': '68635030', 'father_name': 'Michael', 'mother_name': 'Crystal', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '48875147', 'ref_number_2': '44827414', 'city': 'South Wesleyberg', 'province': 'Pennsylvania', 'address': '6522 Cortez Coves\nScottfort, DE 20721'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:15:18
-INFO     api_logger:logger.py:44 Status code: 400
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '9850030625988396423d5ade9e113f74', 'date': 'Thu, 30 Oct 2025 21:15:17 GMT', 'server': 'Google Frontend', 'Content-Length': '269', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\ncountry\n  Value error, country must be one of: BO, MX, PE, DO, US, AR, BR [type=value_error, input_value='paises bajos', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

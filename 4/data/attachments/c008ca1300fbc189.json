@@ -1,1 +1,0 @@
-{'detail': "1 validation error for ProfessionalCreate\ncountry\n  Value error, country must be one of: AR, BO, BR, DO, MX, PE, US [type=value_error, input_value='china', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

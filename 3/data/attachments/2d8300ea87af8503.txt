@@ -1,9 +1,0 @@
-INFO     api_logger:logger.py:21 HTTP method: POST
-INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
-DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
-DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyNDYyMDkwLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.p9BE5tetcx5Wq-bkho3IfkBTYNv2EbFebdmMeHKXSaA'}
-DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Mary', 'last_name': 'Hernandez', 'date_of_birth': '09/09/1974', 'sex': 'femenino', 'country': 'US', 'dni': '90427921', 'personal_email': 'jjarvis@example.net', 'phone': '55562744', 'profession': 'Dentist', 'specialty': 'white', 'city': 'CochabambaMetropolitanaZonaCentroIndustrialSur', 'province': 'New Mexico', 'address': '385 Kathy Creek\nJohnfurt, PA 74784'}
-INFO     api_logger:logger.py:39 Timestamp: 2025-10-30 21:17:46
-INFO     api_logger:logger.py:44 Status code: 500
-DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '91e7831745d205d474f48bbe4e460e4f', 'date': 'Thu, 30 Oct 2025 21:17:46 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
-DEBUG    api_logger:logger.py:57 Response text: Internal Server Error
