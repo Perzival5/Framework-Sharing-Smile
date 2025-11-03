@@ -211,6 +211,8 @@ def test_Verificar_que_no_se_registre_un_paciente_con_photo_path_invalido(get_ur
 
 @pytest.mark.negative
 @pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
+@pytest.mark.xfail(reason="bug conocido: si se pasa del limite de caracteres no te permite registrar un paciente, pero por que la api devuelve un status 500 cuando deberia ser 400 bad request")
 @pytest.mark.parametrize("date", input_large)
 def test_Verificar_rechazo_en_la_creacion_de_paciente_excediendo_longitud_maxima(get_url,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en la creación de paciente con {date['item']} excediendo longitud máxima")
@@ -219,8 +221,9 @@ def test_Verificar_rechazo_en_la_creacion_de_paciente_excediendo_longitud_maxima
     assert_payload_patient(request)
     response = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.patients.value,
                                 header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_patient())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.patients.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.negative
 @pytest.mark.regression

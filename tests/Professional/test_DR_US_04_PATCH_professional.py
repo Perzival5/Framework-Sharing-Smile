@@ -102,9 +102,9 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
     assert_field_value_response(request, input['item'], " ")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.ok.value)
-    assert_schema(response.json(), "schema_201_post.json", StaticDataModules.professionals.name)
-    assert_field_value_response(response.json(), input['item'], setup_professional[input['item']])
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.negative
 @pytest.mark.regression
@@ -121,16 +121,19 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_e
 
 @pytest.mark.negative
 @pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.parametrize("input", input_space_special)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_valor_solo_de_espacios_date_of_birth_sex_country_personal_email(get_url,setup_professional,input):
     allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar un profesional con {input['item']} con un valor de solo espacios")
+    pytest.skip("bug conocido: si quieres actualizar la informacion de un profesional con solo espacios para sex , country , personal_email no te lo permite, pero por que la api devuelve un status 500 cuando deberia ser 400 bad request")
     request=build_patch_payload(input['item'], " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.professionals.name)
     assert_field_value_response(request, input['item'], " ")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
+    assert_response_validation_error_400(response)
 
 #bug
 @pytest.mark.negative
@@ -181,7 +184,7 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_date_of_birth_e
 @pytest.mark.negative
 @pytest.mark.regression
 @allure.severity(allure.severity_level.NORMAL)
-@pytest.mark.xfail(reason= "bug conocido: el campo phone permite actualizar solo con letras que es un valor invalido")
+@pytest.mark.xfail(reason= "bug conocido: el campo phone permite actualizar solo con letras que es un valor invalido y para sex, country, email esta devolviendo un estatus 500 cuando deberia ser 400 bad request")
 @pytest.mark.parametrize("date", input_invalid)
 def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invalido(get_url,date,setup_professional):
     allure.dynamic.title(f"{date['id']}: Verificar que no se pueda actualizar un profesional con {date['item']} con un valor inválido")
@@ -190,8 +193,9 @@ def test_Verificar_que_no_se_pueda_actualizar_un_profesional_con_un_valor_invali
     assert_field_value_response(request, date['item'], date['input'])
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.negative
 @pytest.mark.regression
@@ -205,6 +209,8 @@ def test_Verificar_que_no_se_actualizar_un_profesional_con_photo_path_invalido(g
 
 @pytest.mark.negative
 @pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
+@pytest.mark.xfail(reason= "bug conocido: si se pasa del limite de caracteres no te permite actualizar la informacion de un profesional, pero por que la api devuelve un status 500 cuando deberia ser 400 bad request")
 @pytest.mark.parametrize("date", input_large)
 def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxima(get_url,setup_professional,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en actualizar un profesional con {date['item']} excediendo longitud máxima")
@@ -213,11 +219,14 @@ def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxi
     assert_field_value_response(request, date['item'], date['input'])
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.negative
 @pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
+@pytest.mark.xfail(reason= "bug conocido: si se pasa del limite de caracteres no te permite actualizar la informacion de un profesional, pero por que la api devuelve un status 500 cuando deberia ser 400 bad request")
 @pytest.mark.parametrize("date", input_large_special_pro)
 def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxima_sex_country(get_url,setup_professional,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en actualizar un profesional con {date['item']} excediendo longitud máxima")
@@ -226,8 +235,9 @@ def test_Verificar_rechazo_en_actualizar_un_profesional_excediendo_longitud_maxi
     assert_field_value_response(request, date['item'], date['input'])
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.professionals.value}{setup_professional['id']}",
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
+    assert_response_validation_error_400(response)
 
 #bug
 @pytest.mark.negative

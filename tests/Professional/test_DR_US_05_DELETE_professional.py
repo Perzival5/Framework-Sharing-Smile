@@ -34,7 +34,7 @@ def test_Verificar_eliminación_de_profesional_fallida_con_ID_invalido(get_url, 
 @pytest.mark.regression
 @pytest.mark.parametrize("date", id_not_exist)
 def test_Verificar_eliminación_de_profesional_con_ID_no_existente(get_url, date):
-    allure.dynamic.title("DR-TC160: Verificar eliminación de profesional con ID no existente")
+    allure.dynamic.title("DR-TC160: Verificar que no se pueda eliminar un profesional con ID no existente")
     response = request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.professionals.value}{date['input']}",
                                 header_type=StaticDataHeaders.header_professional.value)
     assert_response_status_code(response.status_code, StaticStatus.not_found.value)

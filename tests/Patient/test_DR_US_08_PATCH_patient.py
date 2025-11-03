@@ -121,16 +121,19 @@ def test_Verificar_que_no_se_pueda_actualizar_un_paciente_con_valor_solo_de_espa
 
 @pytest.mark.negative
 @pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.parametrize("input", input_space_special)
 def test_Verificar_que_no_se_pueda_actualizar_un_paciente_con_valor_solo_de_espacios_date_of_birth_sex_country_fissure_type(get_url,setup_patient,input):
     allure.dynamic.title(f"{input['id']}: Verificar que no se pueda actualizar un paciente con {input['item']} con un valor de solo espacios")
+    pytest.skip("bug conocido: no te permite actualizar los datos por espacios vacios para sex, country y tipo de fisura de un paciente, pero no devuelve un estatus 400 si no un 500")
     request=build_patch_payload(input['item'], " ")
     assert_schema(request, "schema_input_patch.json", StaticDataModules.patients.name)
     assert_field_value_response(request, input['item'], " ")
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.patients.value}{setup_patient['id']}",
                                 header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.patients.name)
+    assert_response_validation_error_400(response)
 
 #bug
 @pytest.mark.negative
@@ -190,8 +193,9 @@ def test_Verificar_que_no_se_pueda_actualizar_un_paciente_con_un_valor_invalido(
     assert_field_value_response(request, date['item'], date['input'])
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.patients.value}{setup_patient['id']}",
                                 header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.patients.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.negative
 @pytest.mark.regression
@@ -205,6 +209,8 @@ def test_Verificar_que_no_se_actualizar_un_paciente_con_photo_path_invalido(get_
 
 @pytest.mark.negative
 @pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
+@pytest.mark.xfail(reason="bug conocido: si se pasa del limite de caracteres no te permite actualizar la informacion de un paciente, pero por que la api devuelve un status 500 cuando deberia ser 400 bad request")
 @pytest.mark.parametrize("date", input_large)
 def test_Verificar_rechazo_en_actualizar_un_paciente_excediendo_longitud_maxima(get_url,setup_patient,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en actualizar un paciente con {date['item']} excediendo longitud máxima")
@@ -213,11 +219,14 @@ def test_Verificar_rechazo_en_actualizar_un_paciente_excediendo_longitud_maxima(
     assert_field_value_response(request, date['item'], date['input'])
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.patients.value}{setup_patient['id']}",
                                 header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.patients.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.negative
 @pytest.mark.regression
+@pytest.mark.xfail(reason="bug conocido: si se pasa del limite de caracteres no te permite actualizar la informacion de un paciente, pero por que la api devuelve un status 500 cuando deberia ser 400 bad request")
+@allure.severity(allure.severity_level.NORMAL)
 @pytest.mark.parametrize("date", input_large_special_pa)
 def test_Verificar_rechazo_en_actualizar_un_paciente_excediendo_longitud_maxima_sex_country(get_url,setup_patient,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en actualizar un paciente con {date['item']} excediendo longitud máxima")
@@ -226,8 +235,9 @@ def test_Verificar_rechazo_en_actualizar_un_paciente_excediendo_longitud_maxima_
     assert_field_value_response(request, date['item'], date['input'])
     response = request_function(StaticDataVerbs.patch.value, get_url, f"{StaticDataModules.patients.value}{setup_patient['id']}",
                                 header_type=StaticDataHeaders.header_patient.value, payload=request, files=get_file_edit())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.patients.name)
+    assert_response_validation_error_400(response)
 
 #bug
 @pytest.mark.negative

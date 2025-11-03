@@ -34,7 +34,7 @@ def test_Verificar_eliminación_de_paciente_fallida_con_ID_invalido(get_url, dat
 @pytest.mark.regression
 @pytest.mark.parametrize("date", id_not_exist)
 def test_Verificar_eliminación_de_paciente_con_ID_no_existente(get_url, date):
-    allure.dynamic.title("DR-TC315: Verificar eliminación de paciente con ID no existente")
+    allure.dynamic.title("DR-TC315: Verificar que no se pueda eliminar un paciente con ID que no existente")
     response = request_function(StaticDataVerbs.delete.value, get_url, f"{StaticDataModules.patients.value}{date['input']}",
                                 header_type=StaticDataHeaders.header_delete_patient.value)
     assert_response_status_code(response.status_code, StaticStatus.not_found.value)

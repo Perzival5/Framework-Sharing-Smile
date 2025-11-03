@@ -14,6 +14,7 @@ from src.resources.files import *
 
 @pytest.mark.positive
 @pytest.mark.regression
+@pytest.mark.smoke
 def test_Verificar_registro_fotografico_de_un_paciente(get_url, setup_patient):
     allure.dynamic.title("DR-TC318: Verificar el registro fotográfico de un paciente")
     response = request_function(StaticDataVerbs.post.value, get_url, f"{StaticDataModules.patients.value}{setup_patient['id']}{StaticDataModules.photo.value}",

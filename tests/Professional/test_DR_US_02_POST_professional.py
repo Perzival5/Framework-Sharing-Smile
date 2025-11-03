@@ -144,6 +144,8 @@ def test_Verificar_que_no_se_registre_un_profesional_con_photo_path_invalido(get
 
 @pytest.mark.negative
 @pytest.mark.regression
+@allure.severity(allure.severity_level.NORMAL)
+@pytest.mark.xfail(reason= "bug conocido: si se pasa del limite de caracteres no te permite registrar un profesional, pero por que la api devuelve un status 500 cuando deberia ser 400 bad request")
 @pytest.mark.parametrize("date", input_large)
 def test_Verificar_rechazo_en_la_creacion_de_profesional_excediendo_longitud_maxima(get_url,date):
     allure.dynamic.title(f"{date['id']}: Verificar rechazo en la creación de profesional con {date['item']} excediendo longitud máxima")
@@ -152,8 +154,9 @@ def test_Verificar_rechazo_en_la_creacion_de_profesional_excediendo_longitud_max
     assert_payload_professional(request)
     response = request_function(StaticDataVerbs.post.value, get_url, StaticDataModules.professionals.value,
                                 header_type=StaticDataHeaders.header_professional.value, payload=request, files=get_file_profile())
-    assert_response_status_code(response.status_code, StaticStatus.internal_server_error.value)
-    assert_response_500(response)
+    assert_response_status_code(response.status_code, StaticStatus.bad_request.value)
+    assert_schema(response.json(), "schema_400_post.json", StaticDataModules.professionals.name)
+    assert_response_validation_error_400(response)
 
 @pytest.mark.negative
 @pytest.mark.regression
