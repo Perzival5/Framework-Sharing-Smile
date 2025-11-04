@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Benjamin', 'last_name': 'Moore', 'date_of_birth': '17/01/2008', 'sex': 'masculino', 'country': 'PE', 'dni': '11065123', 'father_name': 'James', 'mother_name': 'ChoqueCasaMartinezFernandezDelCampoGutierrezLopezLeonelMamaniMaximilianoGonzalezFernandezSantosPerezChoque', 'fissure_type': 'Flap izq', 'ref_number_1': '38957211', 'ref_number_2': '15048173', 'city': 'Shepherdside', 'province': 'South Dakota', 'address': '321 Nathan Light Suite 595\nWest Michael, NM 42389'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:07:00
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '7def8ca7221615f5c4c874776a47d32f;o=1', 'date': 'Tue, 04 Nov 2025 00:07:00 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

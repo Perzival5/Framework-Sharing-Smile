@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyODEzMDI2LCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.6fwlqBRcDH8ulvVcVUJUtD0OzOLqiKIxhaGUs1_WN7Y'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'David', 'last_name': 'Duncan', 'date_of_birth': '07/28/1999', 'sex': 'masculino', 'country': 'BO', 'dni': '18663589', 'personal_email': 'christopherdavidson@example.net', 'phone': '50525303', 'profession': 'Music therapist', 'specialty': 'ten', 'city': 'Hollyberg', 'province': 'Alabama', 'address': '272 Holloway Knolls\nVincentfurt, FL 01792'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:09:39
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'aa5c5428e943e87f93f37585d82e34b3', 'date': 'Tue, 04 Nov 2025 00:09:39 GMT', 'server': 'Google Frontend', 'Content-Length': '45', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'date_of_birth must be dd/mm/yyyy'}

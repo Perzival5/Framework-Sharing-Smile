@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyODEzMDI2LCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.6fwlqBRcDH8ulvVcVUJUtD0OzOLqiKIxhaGUs1_WN7Y'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'AlejandroMaximilianoGonzalezFernandezSantosPerez', 'last_name': 'Blair', 'date_of_birth': '31/03/1984', 'sex': 'femenino', 'country': 'AR', 'dni': '16576861', 'personal_email': 'grahamashley@example.net', 'phone': '89501028', 'profession': 'Multimedia specialist', 'specialty': 'tend', 'city': 'Lake Jessica', 'province': 'Oregon', 'address': '604 Burns Island\nCrawfordtown, CO 60319'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:09:47
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '9f92e592d72a1873e4a2940b7c7cb4da', 'date': 'Tue, 04 Nov 2025 00:09:47 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

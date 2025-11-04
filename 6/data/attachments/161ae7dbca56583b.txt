@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Evan', 'last_name': 'Williamson', 'date_of_birth': '16/08/2024', 'sex': 'masculino', 'country': 'BR', 'dni': '22914576', 'father_name': 'Tyler', 'mother_name': 'Holly', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '21572228', 'ref_number_2': '85874505', 'city': 'CochabambaMetropolitanaZonaCentroIndustrialSur', 'province': 'Connecticut', 'address': '282 Kathleen Village Apt. 380\nAndreaville, MD 23929'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:07:07
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '6c566a27ddb92441b32f3e5f9a91d45c', 'date': 'Tue, 04 Nov 2025 00:07:07 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

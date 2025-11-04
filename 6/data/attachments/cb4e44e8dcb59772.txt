@@ -1,0 +1,27 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Catherine', 'last_name': 'Graham', 'date_of_birth': '11/11/2008', 'sex': 'masculino', 'country': 'US', 'dni': '97868228', 'father_name': 'Gregory', 'mother_name': 'Renee', 'fissure_type': 'Flap der', 'ref_number_1': '65235072', 'ref_number_2': '89370001', 'city': 'East Melvin', 'province': 'Alaska', 'address': '869 Pacheco Island Suite 547\nEast John, NC 60820'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:08:09
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '7fe5e5d23d3bf4bbc6192951a6c3308c', 'date': 'Tue, 04 Nov 2025 00:08:09 GMT', 'server': 'Google Frontend', 'Content-Length': '466', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Catherine', 'last_name': 'Graham', 'date_of_birth': '2008-11-11', 'sex': 'masculino', 'country': 'US', 'city': 'East Melvin', 'province': 'Alaska', 'address': '869 Pacheco Island Suite 547\nEast John, NC 60820', 'dni': '97868228', 'father_name': 'Gregory', 'mother_name': 'Renee', 'ref_number_1': '65235072', 'ref_number_2': '89370001', 'fissure_type': 'Flap der', 'email': None, 'phone': None, 'photo_path': 'https://i.ibb.co/MDMwPsT7/007f5841b4af.jpg', 'id': 1043, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/1043
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'dni': ''}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:08:09
+INFO     api_logger:logger.py:44 Status code: 200
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '1cb915ba4b7d7e173707edd3c558937a', 'date': 'Tue, 04 Nov 2025 00:08:09 GMT', 'server': 'Google Frontend', 'Content-Length': '466', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Catherine', 'last_name': 'Graham', 'date_of_birth': '2008-11-11', 'sex': 'masculino', 'country': 'US', 'city': 'East Melvin', 'province': 'Alaska', 'address': '869 Pacheco Island Suite 547\nEast John, NC 60820', 'dni': '97868228', 'father_name': 'Gregory', 'mother_name': 'Renee', 'ref_number_1': '65235072', 'ref_number_2': '89370001', 'fissure_type': 'Flap der', 'email': None, 'phone': None, 'photo_path': 'https://i.ibb.co/MDMwPsT7/007f5841b4af.jpg', 'id': 1043, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/1043
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:08:09
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '070d04f730863e51ed0d6d97e283c819', 'date': 'Tue, 04 Nov 2025 00:08:09 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

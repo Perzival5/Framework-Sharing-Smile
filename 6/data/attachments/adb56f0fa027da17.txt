@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: PUT
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Jonathan', 'last_name': 'Aguirre', 'date_of_birth': '03/02/2017', 'sex': 'femenino', 'country': 'BO', 'dni': '38712587', 'father_name': 'Dennis', 'mother_name': 'Sabrina', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '28914211', 'ref_number_2': '49029177', 'city': 'Nicoletown', 'province': 'Delaware', 'address': '61749 Castillo Knolls Apt. 419\nLake Jameshaven, ID 27846'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:07:18
+INFO     api_logger:logger.py:44 Status code: 405
+DEBUG    api_logger:logger.py:48 Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': '6ddcd41306fac9b0c46678d5f9363da3', 'date': 'Tue, 04 Nov 2025 00:07:18 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Method Not Allowed'}

@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Carl', 'last_name': 'Lewis', 'date_of_birth': '19/07/2010', 'sex': 'masculinofemeninootro', 'country': 'BO', 'dni': '75737144', 'father_name': 'Caleb', 'mother_name': 'Donna', 'fissure_type': 'Flap izq', 'ref_number_1': '96282021', 'ref_number_2': '66912718', 'city': 'South Jillian', 'province': 'New Mexico', 'address': '95155 Crystal Run Suite 204\nWest Stephenport, VI 54322'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:07:13
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '659a733dc37da4c86f68fa061d573aa6', 'date': 'Tue, 04 Nov 2025 00:07:13 GMT', 'server': 'Google Frontend', 'Content-Length': '261', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\nsex\n  Value error, sex must be 'Masculino' or 'Femenino' [type=value_error, input_value='masculinofemeninootro', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

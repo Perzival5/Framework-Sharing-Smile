@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1654555612
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyODEzMDI2LCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.6fwlqBRcDH8ulvVcVUJUtD0OzOLqiKIxhaGUs1_WN7Y'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Michael', 'last_name': 'Banks', 'date_of_birth': '12/10/2006', 'sex': 'femenino', 'country': 'AR', 'dni': '34446370', 'personal_email': 'ferrellcharles@example.org', 'phone': '38409891', 'profession': 'Computer games developer', 'specialty': 'over', 'city': 'Morganton', 'province': 'Tennessee', 'address': '171 Joy Forks\nZhangtown, MA 27687'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:12:15
+INFO     api_logger:logger.py:44 Status code: 404
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'de0c5fbc115be4b5d8eab85d2079c626', 'date': 'Tue, 04 Nov 2025 00:12:15 GMT', 'server': 'Google Frontend', 'Content-Length': '35', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Professional not found'}

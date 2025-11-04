@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Gary', 'last_name': 'Wade', 'date_of_birth': '', 'sex': 'masculino', 'country': 'PE', 'dni': '95560984', 'father_name': 'Cody', 'mother_name': 'Rachel', 'fissure_type': 'Flap izq', 'ref_number_1': '77506944', 'ref_number_2': '90599660', 'city': 'Wilsonmouth', 'province': 'Alabama', 'address': '96807 Vasquez Road\nRyanton, ND 41052'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:06:17
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '35f84c870f0ddfbe58219c635f624b32', 'date': 'Tue, 04 Nov 2025 00:06:17 GMT', 'server': 'Google Frontend', 'Content-Length': '148', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'date_of_birth'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

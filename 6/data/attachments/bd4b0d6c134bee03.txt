@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYyODEyNjEyLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.OTfN66OZwde4F60BUT_UFud6UWx-oJq6ZlIwFgqIeSg'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Dustin', 'last_name': 'Grant', 'date_of_birth': '07/28/1999', 'sex': 'masculino', 'country': 'MX', 'dni': '29664173', 'father_name': 'Joshua', 'mother_name': 'Nicole', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '79357479', 'ref_number_2': '82424834', 'city': 'Ronaldfurt', 'province': 'Hawaii', 'address': '544 Jackson Tunnel Suite 149\nPort Ashley, OR 34731'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:06:51
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '34a2ef4fc0eefbb7912f396eeb8063ae', 'date': 'Tue, 04 Nov 2025 00:06:51 GMT', 'server': 'Google Frontend', 'Content-Length': '45', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'date_of_birth must be dd/mm/yyyy'}

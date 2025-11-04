@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYyODEzMDI2LCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.6fwlqBRcDH8ulvVcVUJUtD0OzOLqiKIxhaGUs1_WN7Y'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'John', 'last_name': 'Sanford', 'date_of_birth': '03/12/1978', 'sex': 'masculino', 'country': 'japon', 'dni': '92495569', 'personal_email': 'cohentracy@example.net', 'phone': '69194662', 'profession': 'Radio producer', 'specialty': 'clear', 'city': 'Port Tashabury', 'province': 'Kansas', 'address': '36421 Velasquez Loop Apt. 427\nPort Thomas, VT 94249'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-04 00:09:42
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '50ee615ad176d63e7b160b37c50d9987', 'date': 'Tue, 04 Nov 2025 00:09:42 GMT', 'server': 'Google Frontend', 'Content-Length': '267', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for ProfessionalCreate\ncountry\n  Value error, country must be one of: AR, BO, BR, DO, MX, PE, US [type=value_error, input_value='japon', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}
