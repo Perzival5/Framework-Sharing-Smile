@@ -1,116 +1,119 @@
-# Sharing Smile
+# Sharing Smile – Framework de Pruebas Automatizadas Rest Api
 
-Nota: Antes de ejecutar el proyecto, edite el archivo .env con sus datos locales.<br>
+📑 Nota: Antes de ejecutar el proyecto, edite el archivo .env con sus datos locales.<br>
 Debe configurar las credenciales proporcionadas para los usuarios admin y profesional.
 
-## Instrucciones de Instalaciónn
+### Precondiciones
+Antes de comenzar, asegúrate de tener instalado en tu máquina local:
+- **Git**
+- **Python 3.13.4** o superior
+- **Visual Studio Code (VS Code)** o su editor de codigo de preferencia
 
-1. Requisitos
-  Python 3.x
-  pip (gestor de paquetes de Python)
+## ⚙️ Instalación
 
-2. Crear entorno virtual
+Para generar los reportes HTML, necesitas instalar la herramienta de línea de comandos **Allure**.
+
+#### En Windows (PowerShell + Scoop)
+1. Si no tienes **Scoop**, instálalo con:
+   ```powershell
+   Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+   irm get.scoop.sh | iex
+2. Instala Allure:
+   ```powershell
+   scoop install allure
+4. Verifica la instalación
+   ```powershell
+   allure --version
+## 📥 Descargar el proyecto
+
+Clona el repositorio y accede al directorio:
+```bash
+git clone https://github.com/Perzival5/Framework-Sharing-Smile.git
+cd Framework-Sharing-Smile
 ```
+
+---
+
+## 🛠️ Configuración del entorno
+
+### Crear entorno virtual
+```bash
 python -m venv venv
 ```
-3. Activar entorno virtual
-Windows:
 
-```
-venv/Scripts/activate
-```
-4.Instalar dependencias
+### Activar entorno virtual
+- **Windows**:
+  ```bash
+  source venv/Scripts/activate
+  ```
+- **macOS/Linux**:
+  ```bash
+  source venv/bin/activate
+  ```
 
-```
+### Instalar dependencias
+```bash
 pip install -r requirements.txt
 ```
 
-5. Instalación del plugin de Allure<br>
-Primero, necesitas instalar el plugin de Pytest que permite generar los archivos de reporte de Allure.
+---
 
-```
-pip install allure-pytest
-```
+## 🚀 Ejecución de pruebas
 
-6. Instalación de Allure Commandline<br>
-Para generar los reportes HTML, necesitas tener la herramienta de línea de comandos de Allure instalada en tu sistema.
-
-En Windows (usando PowerShell y Scoop):<br>
-Si no tienes Scoop, primero instálalo con los siguientes comandos:
-
-PowerShell
-```
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-irm get.scoop.sh | iex
-```
-
-Luego, instala Allure:
-
-```
-scoop install allure
-```
-
-Puedes verificar la instalación ejecutando:
-
-```
-allure --version
-```
-
-7. Ejecución de pruebas y generación de reportes<br>
-Una vez que el plugin y la herramienta de Allure están instalados, puedes ejecutar tus pruebas y generar el reporte.
-
-Ejecuta tus pruebas con Pytest, indicando la carpeta donde se guardarán los resultados. La bandera --alluredir es obligatoria.
-
-```
+### Ejecución general
+```bash
 pytest
 ```
-Esto creará una carpeta llamada reports (puedes nombrarla como quieras) con los archivos de resultados.
+Esto ejecuta todas las pruebas y genera resultados en la carpeta `reports/`.
 
-Genera y visualiza el reporte HTML. Este comando tomará los archivos de la carpeta reports y creará un reporte visual que se abrirá automáticamente en tu navegador.
-
-```
+### Generar reporte HTML con Allure
+```bash
 allure serve reports
 ```
+Este comando abre automáticamente un reporte visual en tu navegador.
 
-### Comandos para ejecutar pruebas
+---
 
-#### Feature
-
-* Login
-  ```
+### Ejecución por módulo (Feature)
+- **Login**  
+  ```bash
   pytest tests/Login
   ```
-* Paciente
-   ```
+- **Paciente**  
+  ```bash
   pytest tests/Patient
   ```
-* Profesional
-  ```
+- **Profesional**  
+  ```bash
   pytest tests/Professional
   ```
-* End to End
-   ```
+- **End to End**  
+  ```bash
   pytest tests/e2e
   ```
-#### Tipo de Prueba
 
-* Smoke
-  ```
+---
+
+### Ejecución por tipo de prueba (Marcadores)
+- **Smoke**  
+  ```bash
   pytest -m "smoke"
   ```
-* Negative
-   ```
+- **Negative**  
+  ```bash
   pytest -m "negative"
   ```
-* Positive
-  ```
+- **Positive**  
+  ```bash
   pytest -m "positive"
   ```
-* Regression
-   ```
+- **Regression**  
+  ```bash
   pytest -m "regression"
-  ```      
-* Flujos
-   ```
+  ```
+- **Flujos (E2E)**  
+  ```bash
   pytest -m "e2e"
-  ```      
+  ```
+
+---
