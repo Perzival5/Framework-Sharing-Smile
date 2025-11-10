@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Caitlyn', 'last_name': 'Peck', 'date_of_birth': '12/08/1990', 'sex': 'femenino', 'country': 'BO', 'dni': '68885417', 'personal_email': 'brownderek@example.net', 'phone': '35451783', 'profession': 'Probation officer', 'specialty': 'name', 'city': 'Jamiemouth', 'province': 'Georgia', 'address': '6380 Robert Shoal Apt. 928\nNew Johnburgh, MH 73477'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:28
+INFO     api_logger:logger.py:44 Status code: 405
+DEBUG    api_logger:logger.py:48 Response headers: {'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': 'ab8e3f61da8bc93744eb618962c98368', 'date': 'Mon, 10 Nov 2025 20:51:28 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Method Not Allowed'}

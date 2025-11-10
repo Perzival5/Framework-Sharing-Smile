@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Diana', 'last_name': 'Mason', 'date_of_birth': '', 'sex': 'masculino', 'country': 'BO', 'dni': '39593983', 'personal_email': 'thomasana@example.org', 'phone': '33199132', 'profession': 'Corporate treasurer', 'specialty': 'phone', 'city': 'Port Christopherhaven', 'province': 'Tennessee', 'address': '36134 Gonzalez Squares Suite 495\nSouth Megan, CT 29139'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:07
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '4199bd00ecc573c36c16123956fa77b5', 'date': 'Mon, 10 Nov 2025 20:51:07 GMT', 'server': 'Google Frontend', 'Content-Length': '148', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'date_of_birth'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

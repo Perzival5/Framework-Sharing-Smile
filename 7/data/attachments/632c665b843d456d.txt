@@ -1,0 +1,27 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Elizabeth', 'last_name': 'Herrera', 'date_of_birth': '28/06/2001', 'sex': 'masculino', 'country': 'PE', 'dni': '85101723', 'personal_email': 'brett29@example.net', 'phone': '77849094', 'profession': 'Paramedic', 'specialty': 'weight', 'city': 'Martinezton', 'province': 'Nebraska', 'address': '96213 Joanne Mount Suite 516\nRayburgh, VA 90052'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:52:15
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'b2857496e9dc6f9aa10e73642b731bef', 'date': 'Mon, 10 Nov 2025 20:52:15 GMT', 'server': 'Google Frontend', 'Content-Length': '421', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Elizabeth', 'last_name': 'Herrera', 'date_of_birth': '2001-06-28', 'sex': 'masculino', 'country': 'PE', 'city': 'Martinezton', 'province': 'Nebraska', 'address': '96213 Joanne Mount Suite 516\nRayburgh, VA 90052', 'dni': '85101723', 'personal_email': 'brett29@example.net', 'phone': '77849094', 'profession': 'Paramedic', 'specialty': 'weight', 'photo_path': 'https://i.ibb.co/4Hd6HVW/48b019f3983b.jpg', 'id': 1353, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1353
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': ''}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:52:15
+INFO     api_logger:logger.py:44 Status code: 200
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'dd9706b49f3f971f78a0e569563609d4', 'date': 'Mon, 10 Nov 2025 20:52:15 GMT', 'server': 'Google Frontend', 'Content-Length': '421', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Elizabeth', 'last_name': 'Herrera', 'date_of_birth': '2001-06-28', 'sex': 'masculino', 'country': 'PE', 'city': 'Martinezton', 'province': 'Nebraska', 'address': '96213 Joanne Mount Suite 516\nRayburgh, VA 90052', 'dni': '85101723', 'personal_email': 'brett29@example.net', 'phone': '77849094', 'profession': 'Paramedic', 'specialty': 'weight', 'photo_path': 'https://i.ibb.co/4Hd6HVW/48b019f3983b.jpg', 'id': 1353, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1353
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:52:15
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'ead6e02937c90b8ee8bd2908e86be00b', 'date': 'Mon, 10 Nov 2025 20:52:15 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

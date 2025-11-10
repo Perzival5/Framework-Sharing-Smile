@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Paul', 'last_name': 'Navarro', 'date_of_birth': '01/04/1988', 'sex': 'masculino', 'country': 'US', 'dni': '49066186', 'personal_email': 'juan.perez.excedidolongituddemaasdasgagsdasfeciendecaracteresparaelcampodeemailprofesional@ejemplopruebalarga.com', 'phone': '57982835', 'profession': 'Research scientist (medical)', 'specialty': 'free', 'city': 'Clementsfort', 'province': 'Texas', 'address': '6940 Thompson Branch\nJohnborough, IA 42526'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:21
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '985f2f310db03786a2f4ac6c6b758d3f', 'date': 'Mon, 10 Nov 2025 20:51:21 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

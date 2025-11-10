@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Lauren', 'last_name': 'Moore', 'date_of_birth': '12/04/2005', 'sex': 'masculino', 'country': 'US', 'dni': '41511378', 'personal_email': 'andreyoung@example.com', 'phone': '90072889', 'profession': 'Scientist, forensic', 'specialty': 'sometimes', 'city': 'New Alexandra', 'province': 'Oregon', 'address': '5628 Price Glen Suite 055\nLake Monicaburgh, UT 68127'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:27
+INFO     api_logger:logger.py:44 Status code: 401
+DEBUG    api_logger:logger.py:48 Response headers: {'www-authenticate': 'Bearer', 'content-type': 'application/json', 'x-cloud-trace-context': '9a9318bdf8f17d745414478e1c9fe952', 'date': 'Mon, 10 Nov 2025 20:51:27 GMT', 'server': 'Google Frontend', 'Content-Length': '30', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Not authenticated'}

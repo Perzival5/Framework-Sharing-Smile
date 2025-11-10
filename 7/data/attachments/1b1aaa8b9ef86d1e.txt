@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Brittany', 'last_name': 'Anderson', 'date_of_birth': '23/06/2018', 'sex': 'masculino', 'country': 'AR', 'dni': '34580144', 'father_name': 'Mark', 'mother_name': 'Stacey', 'fissure_type': 'Flap der', 'ref_number_1': '', 'ref_number_2': '28977129', 'city': 'Sherylmouth', 'province': 'New York', 'address': '0108 Stevens Circles\nWest Heathermouth, ND 92174'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:48:02
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '98da2fdbf1a1164da446e25bf0cfdde1', 'date': 'Mon, 10 Nov 2025 20:48:02 GMT', 'server': 'Google Frontend', 'Content-Length': '147', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'ref_number_1'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

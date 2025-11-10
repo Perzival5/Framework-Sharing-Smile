@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Carrie', 'last_name': 'Garcia', 'date_of_birth': '18/10/2015', 'sex': 'masculino', 'country': 'AR', 'dni': '21005746', 'father_name': 'Brian', 'mother_name': 'Samantha', 'fissure_type': 'hueso', 'ref_number_1': '60186221', 'ref_number_2': '42645521', 'city': 'West Karen', 'province': 'Nebraska', 'address': '57794 Eric Way Suite 399\nPort Timothy, HI 86554'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:48:31
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'd5ae637407e339c045e65ad5e1d19829', 'date': 'Mon, 10 Nov 2025 20:48:31 GMT', 'server': 'Google Frontend', 'Content-Length': '280', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\nfissure_type\n  Value error, fissure_type must be one of: Flap izq, Flap der, Flap Bilateral [type=value_error, input_value='hueso', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

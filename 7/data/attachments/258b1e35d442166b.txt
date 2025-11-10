@@ -1,0 +1,27 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Ashley', 'last_name': 'Rasmussen', 'date_of_birth': '03/09/2013', 'sex': 'masculino', 'country': 'PE', 'dni': '60957057', 'father_name': 'Daniel', 'mother_name': 'Madison', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '80869092', 'ref_number_2': '88919908', 'city': 'Alvarezbury', 'province': 'Louisiana', 'address': '393 Joshua Avenue\nJeffreyland, TX 43629'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:50:54
+INFO     api_logger:logger.py:44 Status code: 201
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '2da5ba1cb36553b74a033e272fa701bd', 'date': 'Mon, 10 Nov 2025 20:50:54 GMT', 'server': 'Google Frontend', 'Content-Length': '466', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'Ashley', 'last_name': 'Rasmussen', 'date_of_birth': '2013-09-03', 'sex': 'masculino', 'country': 'PE', 'city': 'Alvarezbury', 'province': 'Louisiana', 'address': '393 Joshua Avenue\nJeffreyland, TX 43629', 'dni': '60957057', 'father_name': 'Daniel', 'mother_name': 'Madison', 'ref_number_1': '80869092', 'ref_number_2': '88919908', 'fissure_type': 'Flap Bilateral', 'email': None, 'phone': None, 'photo_path': 'https://i.ibb.co/4Hd6HVW/48b019f3983b.jpg', 'id': 1187, 'is_deleted': False}
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/1187
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer dasvasbrbebwebwbweb'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Louis', 'last_name': 'Simpson', 'date_of_birth': '29/07/2022', 'sex': 'masculino', 'country': 'DO', 'dni': '32252548', 'father_name': 'Daniel', 'mother_name': 'Laura', 'fissure_type': 'Flap der', 'ref_number_1': '52769688', 'ref_number_2': '86186184', 'city': 'East Jeffreyberg', 'province': 'South Carolina', 'address': '872 Rodriguez Path\nMerrittmouth, IN 37183'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:50:54
+INFO     api_logger:logger.py:44 Status code: 401
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'da14bf0a867efd2fb09f59b6c8cdbe0a', 'date': 'Mon, 10 Nov 2025 20:50:54 GMT', 'server': 'Google Frontend', 'Content-Length': '26', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Invalid token'}
+INFO     api_logger:logger.py:21 HTTP method: DELETE
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/1187
+DEBUG    api_logger:logger.py:31 Request headers: {'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:50:54
+INFO     api_logger:logger.py:44 Status code: 204
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '456e09feec9a85cf2e79cc9561312247', 'date': 'Mon, 10 Nov 2025 20:50:54 GMT', 'server': 'Google Frontend', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text:

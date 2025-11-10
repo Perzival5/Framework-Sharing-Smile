@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: GET
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: None
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:40
+INFO     api_logger:logger.py:44 Status code: 200
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '9a31b106e3145205bc85935718bb2498', 'date': 'Mon, 10 Nov 2025 20:51:40 GMT', 'server': 'Google Frontend', 'Content-Length': '373', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'first_name': 'jame', 'last_name': 'calle', 'date_of_birth': '1999-07-05', 'sex': 'masculino', 'country': 'BO', 'city': 'cercado', 'province': 'cercado', 'address': '23 de marzo', 'dni': '70707070', 'personal_email': 'profesional@project-x.com', 'phone': '70707070', 'profession': 'doctor', 'specialty': 'doctor', 'photo_path': 'https://i.ibb.co/kgRYSnvk/eb36dd7d501f.jpg', 'id': 1, 'is_deleted': False}

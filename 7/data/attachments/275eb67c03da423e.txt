@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Thomas', 'last_name': 'Deleon', 'date_of_birth': '11/12/2014', 'sex': 'femenino', 'country': 'DO', 'dni': '75641426', 'father_name': 'Craig', 'mother_name': 'Katherine', 'fissure_type': 'CaracteristicaExtendidaDePruebaParaVerificarExcesoDeLongitudPermitidaEnElCampoFeatureTypeDelProfesionalSistemaQA', 'ref_number_1': '40863653', 'ref_number_2': '55269946', 'city': 'Robertview', 'province': 'Connecticut', 'address': '8352 Olson Falls\nWest Jessica, PA 54098'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:48:57
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '6869ec87982590bd77a06b305b4948c7', 'date': 'Mon, 10 Nov 2025 20:48:57 GMT', 'server': 'Google Frontend', 'Content-Length': '325', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for PatientCreate\nfissure_type\n  Value error, fissure_type must be one of: Flap izq, Flap der, Flap Bilateral [type=value_error, input_value='CaracteristicaExtendidaD...DelProfesionalSistemaQA', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

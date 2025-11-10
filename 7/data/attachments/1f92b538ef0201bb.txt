@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: PATCH
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/1654555612
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Diane', 'last_name': 'Lewis', 'date_of_birth': '24/07/1974', 'sex': 'masculino', 'country': 'AR', 'dni': '84569782', 'personal_email': 'johnsoncynthia@example.com', 'phone': '40190964', 'profession': 'Chief of Staff', 'specialty': 'country', 'city': 'South Jefferyland', 'province': 'Minnesota', 'address': '344 Terri Rest Apt. 048\nNorth Christopher, LA 38984'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:53:25
+INFO     api_logger:logger.py:44 Status code: 404
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '826589c6cc45d8d7a6ed97a1e5c8e476;o=1', 'date': 'Mon, 10 Nov 2025 20:53:25 GMT', 'server': 'Google Frontend', 'Content-Length': '35', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Professional not found'}

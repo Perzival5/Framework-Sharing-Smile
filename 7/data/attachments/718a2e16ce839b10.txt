@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Jean', 'last_name': 'Warren', 'date_of_birth': '06/11/2005', 'sex': 'masculino', 'country': 'BR', 'dni': '40373124', 'personal_email': 'williamslori@example.com', 'phone': '99036869', 'profession': 'Event organiser', 'specialty': '', 'city': 'Saraville', 'province': 'Georgia', 'address': '62955 Crystal Ville\nMelanieport, UT 77696'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:09
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '799e7ea7e3bd220eb5787abad38ed3b5', 'date': 'Mon, 10 Nov 2025 20:51:09 GMT', 'server': 'Google Frontend', 'Content-Length': '144', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'specialty'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

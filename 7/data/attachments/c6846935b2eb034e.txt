@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Doris', 'last_name': 'Ruiz', 'date_of_birth': '12/07/2015', 'sex': 'femenino', 'country': 'PE', 'dni': '50439442', 'father_name': 'David', 'mother_name': 'Carol', 'fissure_type': 'Flap izq', 'ref_number_1': '31415604', 'ref_number_2': '35440243', 'city': 'Fullerfort', 'province': 'South Dakota', 'address': '783 Victoria Parkway Apt. 273\nPort Jessicafurt, IA 71085'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:48:33
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '6ee76839d59b3127edf0102819dc5e05', 'date': 'Mon, 10 Nov 2025 20:48:33 GMT', 'server': 'Google Frontend', 'Content-Length': '48', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': 'Only PNG or JPEG images are allowed'}

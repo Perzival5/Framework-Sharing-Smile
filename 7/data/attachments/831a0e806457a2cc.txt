@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Samantha', 'last_name': '', 'date_of_birth': '09/08/2009', 'sex': 'masculino', 'country': 'BR', 'dni': '88946997', 'father_name': 'Keith', 'mother_name': 'Pamela', 'fissure_type': 'Flap Bilateral', 'ref_number_1': '48609521', 'ref_number_2': '30323552', 'city': 'Wilsonstad', 'province': 'Wyoming', 'address': '068 Thomas Square Apt. 537\nBrittanyport, PW 92032'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:47:58
+INFO     api_logger:logger.py:44 Status code: 422
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': 'a7ea99c0f45756c1410716271657bcea', 'date': 'Mon, 10 Nov 2025 20:47:58 GMT', 'server': 'Google Frontend', 'Content-Length': '144', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': [{'type': 'missing', 'loc': ['body', 'last_name'], 'msg': 'Field required', 'input': None, 'url': 'https://errors.pydantic.dev/2.8/v/missing'}]}

@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/patients/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyIiwiZXhwIjoxNzYzNDEyMzYzLCJyb2xlIjoicHJvZmVzc2lvbmFsIiwiZW1haWwiOiJwcm9mZXNpb25hbEBwcm9qZWN0LXguY29tIn0.C2jnghLxFLxbXAvWFX7SR_kJRK3xJIIeMvgKdUbsA88'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Peter', 'last_name': 'Ross', 'date_of_birth': '15/10/2021', 'sex': 'masculino', 'country': 'BO', 'dni': '90840764', 'father_name': 'Matthew', 'mother_name': 'Emily', 'fissure_type': 'Flap izq', 'ref_number_1': '80786888', 'ref_number_2': '77338431', 'city': 'CochabambaMetropolitanaZonaCentroIndustrialSur', 'province': 'Tennessee', 'address': '153 Sharon Way\nPort Raymond, WV 27017'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:48:48
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': 'db4c0c12712ba5243d97709493213a13', 'date': 'Mon, 10 Nov 2025 20:48:48 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error

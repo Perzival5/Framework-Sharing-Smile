@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'Joseph', 'last_name': 'Fernandez', 'date_of_birth': '27/06/2001', 'sex': 'masculino', 'country': 'MX', 'dni': '11291336', 'personal_email': 'adamjackson@example.org', 'phone': 'letras', 'profession': 'Sound technician, broadcasting/film/video', 'specialty': 'visit', 'city': 'Port Josephmouth', 'province': 'South Carolina', 'address': '5087 Caitlyn Coves Apt. 378\nNorth Pamela, NV 43741'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:14
+INFO     api_logger:logger.py:44 Status code: 400
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'application/json', 'x-cloud-trace-context': '2ce84062e359ab73fae17807b6a912dc', 'date': 'Mon, 10 Nov 2025 20:51:14 GMT', 'server': 'Google Frontend', 'Content-Length': '246', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:53 Response payload: {'detail': "1 validation error for ProfessionalCreate\nphone\n  Value error, phone must contain only digits [type=value_error, input_value='letras', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.8/v/value_error"}

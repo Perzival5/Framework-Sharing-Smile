@@ -1,0 +1,1 @@
+{'allow': 'POST', 'content-type': 'application/json', 'x-cloud-trace-context': 'cae01e01a6c98124ed540d19e7d3019d', 'date': 'Mon, 10 Nov 2025 20:47:52 GMT', 'server': 'Google Frontend', 'Content-Length': '31', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}

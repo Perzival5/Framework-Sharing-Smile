@@ -1,0 +1,9 @@
+INFO     api_logger:logger.py:21 HTTP method: POST
+INFO     api_logger:logger.py:26 Domain: project-x-829879158579.southamerica-west1.run.app
+DEBUG    api_logger:logger.py:30 Request URL: https://project-x-829879158579.southamerica-west1.run.app/api/v1/professionals/
+DEBUG    api_logger:logger.py:31 Request headers: {'accept': 'application/json', 'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwiZXhwIjoxNzYzNDEyMjAzLCJyb2xlIjoiYWRtaW4iLCJlbWFpbCI6ImRhdmlkLnJvZHJpZ3VlekBwcm9qZWN0LXguY29tIn0.uAItzJOGMKe0QPwnIoXpm9QsCIlH5Zobdl7iufwk8rc'}
+DEBUG    api_logger:logger.py:32 Request payload: {'first_name': 'AlejandroMaximilianoGonzalezFernandezSantosPerez', 'last_name': 'Rivera', 'date_of_birth': '07/06/1998', 'sex': 'masculino', 'country': 'MX', 'dni': '66696570', 'personal_email': 'bbrown@example.com', 'phone': '67765152', 'profession': 'Hotel manager', 'specialty': 'check', 'city': 'North Whitney', 'province': 'Hawaii', 'address': '902 Chavez Harbor Suite 016\nJacobhaven, WV 96939'}
+INFO     api_logger:logger.py:39 Timestamp: 2025-11-10 20:51:15
+INFO     api_logger:logger.py:44 Status code: 500
+DEBUG    api_logger:logger.py:48 Response headers: {'content-type': 'text/plain; charset=utf-8', 'x-cloud-trace-context': '59673569fae7eb23aa04aa88603792e6', 'date': 'Mon, 10 Nov 2025 20:51:15 GMT', 'server': 'Google Frontend', 'Content-Length': '21', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'}
+DEBUG    api_logger:logger.py:57 Response text: Internal Server Error
